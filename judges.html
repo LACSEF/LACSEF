@@ -1,221 +1,334 @@
-<!DOCTYPE html>
+<!doctype html>
 
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Judging - LA Science Fair</title>
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Public+Sans:wght@600;700&display=swap"
-        rel="stylesheet" />
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Public+Sans:wght@600;700&display=swap"
+      rel="stylesheet" />
     <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
-        rel="stylesheet" />
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries,typography"></script>
     <script src="js/tailwind-config.js"></script>
     <link rel="stylesheet" href="css/styles.css" />
     <script src="js/components.js"></script>
-</head>
+  </head>
 
-<body class="antialiased text-on-surface bg-background min-h-screen flex flex-col">
+  <body class="antialiased text-on-surface bg-background min-h-screen flex flex-col">
     <div id="site-header"></div>
 
     <main class="flex-grow">
+      <!-- Page Hero -->
+      <section class="bg-surface border-b border-outline-variant py-stack-xl">
+        <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+          <h1 class="font-headline-xl text-headline-xl text-primary mb-stack-sm">Become a Judge</h1>
+          <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-stack-lg">
+            Help determine category winners and identify students advancing to the California State
+            Science Fair and ISEF. Your participation makes a real difference in the lives of young
+            scientists.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-stack-sm">
+            <a
+              href="https://app.lascifair.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-2 bg-primary-container text-on-primary font-label-md text-label-md px-8 py-4 rounded hover:opacity-90 transition-opacity">
+              Sign Up to Judge
+              <span class="material-symbols-outlined text-[18px]">open_in_new</span>
+            </a>
+            <a
+              href="mailto:judging@lascifair.org"
+              class="inline-flex items-center gap-2 border border-outline-variant text-primary font-label-md text-label-md px-8 py-4 rounded hover:bg-surface-variant transition-colors">
+              <span class="material-symbols-outlined text-[18px]">mail</span>
+              judging@lascifair.org
+            </a>
+          </div>
+        </div>
+      </section>
 
-        <!-- Page Hero -->
-        <section class="bg-surface border-b border-outline-variant py-stack-xl">
-            <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
-                <h1 class="font-headline-xl text-headline-xl text-primary mb-stack-sm">Become a Judge</h1>
-                <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-stack-lg">
-                    Help determine category winners and identify students advancing to the California State Science Fair
-                    and ISEF. Your participation makes a real difference in the lives of young scientists.
-                </p>
-                <div class="flex flex-col sm:flex-row gap-stack-sm">
-                    <a href="https://app.lascifair.org/"
-                        target="_blank" rel="noopener noreferrer"
-                        class="inline-flex items-center gap-2 bg-primary-container text-on-primary font-label-md text-label-md px-8 py-4 rounded hover:opacity-90 transition-opacity">
-                        Sign Up to Judge
-                        <span class="material-symbols-outlined text-[18px]">open_in_new</span>
-                    </a>
-                    <a href="mailto:judging@lascifair.org"
-                        class="inline-flex items-center gap-2 border border-outline-variant text-primary font-label-md text-label-md px-8 py-4 rounded hover:bg-surface-variant transition-colors">
-                        <span class="material-symbols-outlined text-[18px]">mail</span>
-                        judging@lascifair.org
-                    </a>
-                </div>
+      <div
+        class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-stack-xl flex flex-col gap-stack-xl">
+        <!-- Fair Day Info -->
+        <section
+          class="bg-surface border border-outline-variant rounded-xl p-stack-lg flex flex-col sm:flex-row gap-stack-lg items-start sm:items-center">
+          <div class="flex items-center gap-stack-md">
+            <span class="material-symbols-outlined text-primary-container text-4xl"
+              >calendar_month</span
+            >
+            <div>
+              <p class="font-label-md text-label-md text-secondary mb-1">In-Person Judging Day</p>
+              <p class="font-headline-md text-headline-md text-primary">Monday, March 9, 2026</p>
             </div>
+          </div>
+          <div
+            class="sm:border-l border-outline-variant sm:pl-stack-lg flex flex-col gap-stack-sm font-body-md text-body-md text-secondary">
+            <p>
+              Judges work in panels of 2–3 to ensure every student receives feedback from multiple
+              reviewers.
+            </p>
+            <p>Category Chairpersons provide scoring rubrics and support throughout the session.</p>
+          </div>
         </section>
 
-        <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-stack-xl flex flex-col gap-stack-xl">
-
-            <!-- Fair Day Info -->
-            <section class="bg-surface border border-outline-variant rounded-xl p-stack-lg flex flex-col sm:flex-row gap-stack-lg items-start sm:items-center">
-                <div class="flex items-center gap-stack-md">
-                    <span class="material-symbols-outlined text-primary-container text-4xl">calendar_month</span>
-                    <div>
-                        <p class="font-label-md text-label-md text-secondary mb-1">In-Person Judging Day</p>
-                        <p class="font-headline-md text-headline-md text-primary">Monday, March 9, 2026</p>
-                    </div>
-                </div>
-                <div class="sm:border-l border-outline-variant sm:pl-stack-lg flex flex-col gap-stack-sm font-body-md text-body-md text-secondary">
-                    <p>Judges work in panels of 2–3 to ensure every student receives feedback from multiple reviewers.</p>
-                    <p>Category Chairpersons provide scoring rubrics and support throughout the session.</p>
-                </div>
-            </section>
-
-            <!-- Eligibility -->
-            <section>
-                <div class="flex items-center gap-2 mb-stack-md">
-                    <span class="material-symbols-outlined text-primary-container">verified_user</span>
-                    <h2 class="font-headline-md text-headline-md text-primary">Eligibility Requirements</h2>
-                </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
-
-                    <!-- Junior Division -->
-                    <div class="bg-surface border border-outline-variant rounded-xl p-stack-lg flex flex-col gap-stack-md">
-                        <div>
-                            <h3 class="font-headline-md text-headline-md text-primary">Junior Division</h3>
-                            <p class="font-body-md text-body-md text-secondary text-sm mt-1">Grades 6–8 &nbsp;·&nbsp; 21 categories</p>
-                        </div>
-                        <ul class="flex flex-col gap-2">
-                            <li class="flex items-start gap-2 font-body-md text-body-md text-secondary text-sm">
-                                <span class="material-symbols-outlined text-primary-container text-[16px] mt-0.5 shrink-0">check_circle</span>
-                                Certified science, engineering, math, or CS teachers <span class="italic">(cannot judge their own school's students)</span>
-                            </li>
-                            <li class="flex items-start gap-2 font-body-md text-body-md text-secondary text-sm">
-                                <span class="material-symbols-outlined text-primary-container text-[16px] mt-0.5 shrink-0">check_circle</span>
-                                Individuals holding degrees in STEM fields
-                            </li>
-                            <li class="flex items-start gap-2 font-body-md text-body-md text-secondary text-sm">
-                                <span class="material-symbols-outlined text-primary-container text-[16px] mt-0.5 shrink-0">check_circle</span>
-                                STEM professionals
-                            </li>
-                            <li class="flex items-start gap-2 font-body-md text-body-md text-secondary text-sm">
-                                <span class="material-symbols-outlined text-primary-container text-[16px] mt-0.5 shrink-0">check_circle</span>
-                                Undergraduate pre-service teachers or STEM degree candidates (Juniors/Seniors with research experience)
-                            </li>
-                            <li class="flex items-start gap-2 font-body-md text-body-md text-secondary text-sm">
-                                <span class="material-symbols-outlined text-primary-container text-[16px] mt-0.5 shrink-0">check_circle</span>
-                                Retired individuals meeting the above criteria
-                            </li>
-                        </ul>
-                    </div>
-
-                    <!-- Senior Division -->
-                    <div class="bg-surface border border-outline-variant rounded-xl p-stack-lg flex flex-col gap-stack-md">
-                        <div>
-                            <h3 class="font-headline-md text-headline-md text-primary">Senior Division</h3>
-                            <p class="font-body-md text-body-md text-secondary text-sm mt-1">High School &nbsp;·&nbsp; 15 categories</p>
-                        </div>
-                        <ul class="flex flex-col gap-2">
-                            <li class="flex items-start gap-2 font-body-md text-body-md text-secondary text-sm">
-                                <span class="material-symbols-outlined text-primary-container text-[16px] mt-0.5 shrink-0">check_circle</span>
-                                STEM degree holders, preferably with college poster session or science fair experience
-                            </li>
-                            <li class="flex items-start gap-2 font-body-md text-body-md text-secondary text-sm">
-                                <span class="material-symbols-outlined text-primary-container text-[16px] mt-0.5 shrink-0">check_circle</span>
-                                Graduate STEM degree students
-                            </li>
-                            <li class="flex items-start gap-2 font-body-md text-body-md text-secondary text-sm">
-                                <span class="material-symbols-outlined text-primary-container text-[16px] mt-0.5 shrink-0">check_circle</span>
-                                High school STEM teachers <span class="italic">(cannot judge their own school's students)</span>
-                            </li>
-                            <li class="flex items-start gap-2 font-body-md text-body-md text-secondary text-sm">
-                                <span class="material-symbols-outlined text-primary-container text-[16px] mt-0.5 shrink-0">check_circle</span>
-                                STEM professionals with five or more years of experience
-                            </li>
-                            <li class="flex items-start gap-2 font-body-md text-body-md text-secondary text-sm">
-                                <span class="material-symbols-outlined text-primary-container text-[16px] mt-0.5 shrink-0">check_circle</span>
-                                Retired individuals meeting the above criteria
-                            </li>
-                        </ul>
-                    </div>
-
-                </div>
-            </section>
-
-            <!-- Registration Process -->
-            <section class="bg-surface border border-outline-variant rounded-xl p-stack-lg">
-                <div class="flex items-center gap-2 mb-stack-md">
-                    <span class="material-symbols-outlined text-primary-container">how_to_reg</span>
-                    <h2 class="font-headline-md text-headline-md text-primary">How to Register</h2>
-                </div>
-                <ol class="flex flex-col gap-stack-lg">
-                    <li class="flex gap-stack-md">
-                        <span class="w-8 h-8 rounded-full bg-primary-container text-on-primary font-label-md text-label-md flex items-center justify-center shrink-0 mt-0.5">1</span>
-                        <div>
-                            <h3 class="font-label-md text-label-md text-primary mb-1">Create an account</h3>
-                            <p class="font-body-md text-body-md text-secondary">Access the online registration system at <a href="https://app.lascifair.org/" target="_blank" rel="noopener noreferrer" class="text-primary-container underline underline-offset-2">app.lascifair.org</a> and enter your information.</p>
-                        </div>
-                    </li>
-                    <li class="flex gap-stack-md">
-                        <span class="w-8 h-8 rounded-full bg-primary-container text-on-primary font-label-md text-label-md flex items-center justify-center shrink-0 mt-0.5">2</span>
-                        <div>
-                            <h3 class="font-label-md text-label-md text-primary mb-1">Select your division and categories</h3>
-                            <p class="font-body-md text-body-md text-secondary">Indicate your preferred division (Junior or Senior) and up to three project categories you are qualified to evaluate.</p>
-                        </div>
-                    </li>
-                    <li class="flex gap-stack-md">
-                        <span class="w-8 h-8 rounded-full bg-primary-container text-on-primary font-label-md text-label-md flex items-center justify-center shrink-0 mt-0.5">3</span>
-                        <div>
-                            <h3 class="font-label-md text-label-md text-primary mb-1">Questions? Contact us</h3>
-                            <p class="font-body-md text-body-md text-secondary">For additional preferences or questions, email <a href="mailto:judging@lascifair.org" class="text-primary-container underline underline-offset-2">judging@lascifair.org</a>.</p>
-                        </div>
-                    </li>
-                </ol>
-            </section>
-
-            <!-- Resources -->
-            <section>
-                <div class="flex items-center gap-2 mb-stack-md">
-                    <span class="material-symbols-outlined text-primary-container">library_books</span>
-                    <h2 class="font-headline-md text-headline-md text-primary">Resources</h2>
-                </div>
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-gutter">
-
-                    <a href="category-descriptions.html"
-                        class="bg-surface border border-outline-variant rounded-xl p-stack-lg flex flex-col gap-stack-sm hover:border-primary-container transition-colors group">
-                        <span class="material-symbols-outlined text-secondary group-hover:text-primary-container text-3xl">category</span>
-                        <h3 class="font-label-md text-label-md text-primary">Category Descriptions</h3>
-                        <p class="font-body-md text-body-md text-secondary text-sm flex-grow">Browse all 2026 competition categories to understand the scope of projects you may be asked to evaluate.</p>
-                        <span class="font-label-md text-label-md text-primary-container flex items-center gap-1 text-sm">Browse <span class="material-symbols-outlined text-[16px]">arrow_forward</span></span>
-                    </a>
-
-                    <a href="downloads/judging-interviews.pdf"
-                        target="_blank" rel="noopener noreferrer"
-                        class="bg-surface border border-outline-variant rounded-xl p-stack-lg flex flex-col gap-stack-sm hover:border-primary-container transition-colors group">
-                        <span class="material-symbols-outlined text-secondary group-hover:text-primary-container text-3xl">record_voice_over</span>
-                        <h3 class="font-label-md text-label-md text-primary">Student Interview Guide</h3>
-                        <p class="font-body-md text-body-md text-secondary text-sm flex-grow">What students are expected to present during judging — useful context for evaluators.</p>
-                        <span class="font-label-md text-label-md text-primary-container flex items-center gap-1 text-sm">Download PDF <span class="material-symbols-outlined text-[16px]">download</span></span>
-                    </a>
-
-                    <a href="https://drive.google.com/file/d/1HCg5SMwoV8gXE9Qo8EsG9V6cVxlO-Vv_/view?usp=sharing"
-                        target="_blank" rel="noopener noreferrer"
-                        class="bg-surface border border-outline-variant rounded-xl p-stack-lg flex flex-col gap-stack-sm hover:border-primary-container transition-colors group">
-                        <span class="material-symbols-outlined text-secondary group-hover:text-primary-container text-3xl">event</span>
-                        <h3 class="font-label-md text-label-md text-primary">Important Dates &amp; Deadlines</h3>
-                        <p class="font-body-md text-body-md text-secondary text-sm flex-grow">Full schedule for the 2025-26 fair season including judging day and score submission deadlines.</p>
-                        <span class="font-label-md text-label-md text-primary-container flex items-center gap-1 text-sm">View <span class="material-symbols-outlined text-[16px]">open_in_new</span></span>
-                    </a>
-
-                </div>
-            </section>
-
-            <!-- Non-Discrimination Policy -->
-            <section class="bg-surface-container-low border border-outline-variant rounded-xl p-stack-lg">
-                <p class="font-body-md text-body-md text-secondary text-sm">
-                    LACSEF is an equal opportunity event. We welcome judges regardless of age, ancestry, color, disability, gender, gender identity, sexual orientation, medical condition, national origin, race, or religious creed.
+        <!-- Eligibility -->
+        <section>
+          <div class="flex items-center gap-2 mb-stack-md">
+            <span class="material-symbols-outlined text-primary-container">verified_user</span>
+            <h2 class="font-headline-md text-headline-md text-primary">Eligibility Requirements</h2>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+            <!-- Junior Division -->
+            <div
+              class="bg-surface border border-outline-variant rounded-xl p-stack-lg flex flex-col gap-stack-md">
+              <div>
+                <h3 class="font-headline-md text-headline-md text-primary">Junior Division</h3>
+                <p class="font-body-md text-body-md text-secondary text-sm mt-1">
+                  Grades 6–8 &nbsp;·&nbsp; 21 categories
                 </p>
-            </section>
+              </div>
+              <ul class="flex flex-col gap-2">
+                <li class="flex items-start gap-2 font-body-md text-body-md text-secondary text-sm">
+                  <span
+                    class="material-symbols-outlined text-primary-container text-[16px] mt-0.5 shrink-0"
+                    >check_circle</span
+                  >
+                  Certified science, engineering, math, or CS teachers
+                  <span class="italic">(cannot judge their own school's students)</span>
+                </li>
+                <li class="flex items-start gap-2 font-body-md text-body-md text-secondary text-sm">
+                  <span
+                    class="material-symbols-outlined text-primary-container text-[16px] mt-0.5 shrink-0"
+                    >check_circle</span
+                  >
+                  Individuals holding degrees in STEM fields
+                </li>
+                <li class="flex items-start gap-2 font-body-md text-body-md text-secondary text-sm">
+                  <span
+                    class="material-symbols-outlined text-primary-container text-[16px] mt-0.5 shrink-0"
+                    >check_circle</span
+                  >
+                  STEM professionals
+                </li>
+                <li class="flex items-start gap-2 font-body-md text-body-md text-secondary text-sm">
+                  <span
+                    class="material-symbols-outlined text-primary-container text-[16px] mt-0.5 shrink-0"
+                    >check_circle</span
+                  >
+                  Undergraduate pre-service teachers or STEM degree candidates (Juniors/Seniors with
+                  research experience)
+                </li>
+                <li class="flex items-start gap-2 font-body-md text-body-md text-secondary text-sm">
+                  <span
+                    class="material-symbols-outlined text-primary-container text-[16px] mt-0.5 shrink-0"
+                    >check_circle</span
+                  >
+                  Retired individuals meeting the above criteria
+                </li>
+              </ul>
+            </div>
 
-        </div>
+            <!-- Senior Division -->
+            <div
+              class="bg-surface border border-outline-variant rounded-xl p-stack-lg flex flex-col gap-stack-md">
+              <div>
+                <h3 class="font-headline-md text-headline-md text-primary">Senior Division</h3>
+                <p class="font-body-md text-body-md text-secondary text-sm mt-1">
+                  High School &nbsp;·&nbsp; 15 categories
+                </p>
+              </div>
+              <ul class="flex flex-col gap-2">
+                <li class="flex items-start gap-2 font-body-md text-body-md text-secondary text-sm">
+                  <span
+                    class="material-symbols-outlined text-primary-container text-[16px] mt-0.5 shrink-0"
+                    >check_circle</span
+                  >
+                  STEM degree holders, preferably with college poster session or science fair
+                  experience
+                </li>
+                <li class="flex items-start gap-2 font-body-md text-body-md text-secondary text-sm">
+                  <span
+                    class="material-symbols-outlined text-primary-container text-[16px] mt-0.5 shrink-0"
+                    >check_circle</span
+                  >
+                  Graduate STEM degree students
+                </li>
+                <li class="flex items-start gap-2 font-body-md text-body-md text-secondary text-sm">
+                  <span
+                    class="material-symbols-outlined text-primary-container text-[16px] mt-0.5 shrink-0"
+                    >check_circle</span
+                  >
+                  High school STEM teachers
+                  <span class="italic">(cannot judge their own school's students)</span>
+                </li>
+                <li class="flex items-start gap-2 font-body-md text-body-md text-secondary text-sm">
+                  <span
+                    class="material-symbols-outlined text-primary-container text-[16px] mt-0.5 shrink-0"
+                    >check_circle</span
+                  >
+                  STEM professionals with five or more years of experience
+                </li>
+                <li class="flex items-start gap-2 font-body-md text-body-md text-secondary text-sm">
+                  <span
+                    class="material-symbols-outlined text-primary-container text-[16px] mt-0.5 shrink-0"
+                    >check_circle</span
+                  >
+                  Retired individuals meeting the above criteria
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Registration Process -->
+        <section class="bg-surface border border-outline-variant rounded-xl p-stack-lg">
+          <div class="flex items-center gap-2 mb-stack-md">
+            <span class="material-symbols-outlined text-primary-container">how_to_reg</span>
+            <h2 class="font-headline-md text-headline-md text-primary">How to Register</h2>
+          </div>
+          <ol class="flex flex-col gap-stack-lg">
+            <li class="flex gap-stack-md">
+              <span
+                class="w-8 h-8 rounded-full bg-primary-container text-on-primary font-label-md text-label-md flex items-center justify-center shrink-0 mt-0.5"
+                >1</span
+              >
+              <div>
+                <h3 class="font-label-md text-label-md text-primary mb-1">Create an account</h3>
+                <p class="font-body-md text-body-md text-secondary">
+                  Access the online registration system at
+                  <a
+                    href="https://app.lascifair.org/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-primary-container underline underline-offset-2"
+                    >app.lascifair.org</a
+                  >
+                  and enter your information.
+                </p>
+              </div>
+            </li>
+            <li class="flex gap-stack-md">
+              <span
+                class="w-8 h-8 rounded-full bg-primary-container text-on-primary font-label-md text-label-md flex items-center justify-center shrink-0 mt-0.5"
+                >2</span
+              >
+              <div>
+                <h3 class="font-label-md text-label-md text-primary mb-1">
+                  Select your division and categories
+                </h3>
+                <p class="font-body-md text-body-md text-secondary">
+                  Indicate your preferred division (Junior or Senior) and up to three project
+                  categories you are qualified to evaluate.
+                </p>
+              </div>
+            </li>
+            <li class="flex gap-stack-md">
+              <span
+                class="w-8 h-8 rounded-full bg-primary-container text-on-primary font-label-md text-label-md flex items-center justify-center shrink-0 mt-0.5"
+                >3</span
+              >
+              <div>
+                <h3 class="font-label-md text-label-md text-primary mb-1">Questions? Contact us</h3>
+                <p class="font-body-md text-body-md text-secondary">
+                  For additional preferences or questions, email
+                  <a
+                    href="mailto:judging@lascifair.org"
+                    class="text-primary-container underline underline-offset-2"
+                    >judging@lascifair.org</a
+                  >.
+                </p>
+              </div>
+            </li>
+          </ol>
+        </section>
+
+        <!-- Resources -->
+        <section>
+          <div class="flex items-center gap-2 mb-stack-md">
+            <span class="material-symbols-outlined text-primary-container">library_books</span>
+            <h2 class="font-headline-md text-headline-md text-primary">Resources</h2>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-gutter">
+            <a
+              href="category-descriptions.html"
+              class="bg-surface border border-outline-variant rounded-xl p-stack-lg flex flex-col gap-stack-sm hover:border-primary-container transition-colors group">
+              <span
+                class="material-symbols-outlined text-secondary group-hover:text-primary-container text-3xl"
+                >category</span
+              >
+              <h3 class="font-label-md text-label-md text-primary">Category Descriptions</h3>
+              <p class="font-body-md text-body-md text-secondary text-sm flex-grow">
+                Browse all 2026 competition categories to understand the scope of projects you may
+                be asked to evaluate.
+              </p>
+              <span
+                class="font-label-md text-label-md text-primary-container flex items-center gap-1 text-sm"
+                >Browse
+                <span class="material-symbols-outlined text-[16px]">arrow_forward</span></span
+              >
+            </a>
+
+            <a
+              href="downloads/judging-interviews.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="bg-surface border border-outline-variant rounded-xl p-stack-lg flex flex-col gap-stack-sm hover:border-primary-container transition-colors group">
+              <span
+                class="material-symbols-outlined text-secondary group-hover:text-primary-container text-3xl"
+                >record_voice_over</span
+              >
+              <h3 class="font-label-md text-label-md text-primary">Student Interview Guide</h3>
+              <p class="font-body-md text-body-md text-secondary text-sm flex-grow">
+                What students are expected to present during judging — useful context for
+                evaluators.
+              </p>
+              <span
+                class="font-label-md text-label-md text-primary-container flex items-center gap-1 text-sm"
+                >Download PDF
+                <span class="material-symbols-outlined text-[16px]">download</span></span
+              >
+            </a>
+
+            <a
+              href="https://drive.google.com/file/d/1HCg5SMwoV8gXE9Qo8EsG9V6cVxlO-Vv_/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="bg-surface border border-outline-variant rounded-xl p-stack-lg flex flex-col gap-stack-sm hover:border-primary-container transition-colors group">
+              <span
+                class="material-symbols-outlined text-secondary group-hover:text-primary-container text-3xl"
+                >event</span
+              >
+              <h3 class="font-label-md text-label-md text-primary">
+                Important Dates &amp; Deadlines
+              </h3>
+              <p class="font-body-md text-body-md text-secondary text-sm flex-grow">
+                Full schedule for the 2025-26 fair season including judging day and score submission
+                deadlines.
+              </p>
+              <span
+                class="font-label-md text-label-md text-primary-container flex items-center gap-1 text-sm"
+                >View <span class="material-symbols-outlined text-[16px]">open_in_new</span></span
+              >
+            </a>
+          </div>
+        </section>
+
+        <!-- Non-Discrimination Policy -->
+        <section
+          class="bg-surface-container-low border border-outline-variant rounded-xl p-stack-lg">
+          <p class="font-body-md text-body-md text-secondary text-sm">
+            LACSEF is an equal opportunity event. We welcome judges regardless of age, ancestry,
+            color, disability, gender, gender identity, sexual orientation, medical condition,
+            national origin, race, or religious creed.
+          </p>
+        </section>
+      </div>
     </main>
 
     <div id="site-footer"></div>
-</body>
-
+  </body>
 </html>

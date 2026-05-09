@@ -1,23 +1,31 @@
 .material-symbols-outlined {
-    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  font-variation-settings:
+    "FILL" 0,
+    "wght" 400,
+    "GRAD" 0,
+    "opsz" 24;
 }
 
 @keyframes ticker-scroll {
-    from { transform: translateX(0); }
-    to   { transform: translateX(-50%); }
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }
 
 .ticker-track {
-    display: flex;
-    width: max-content;
-    animation: ticker-scroll 30s linear infinite;
+  display: flex;
+  width: max-content;
+  animation: ticker-scroll 30s linear infinite;
 }
 
 .ticker-track:hover {
-    animation-play-state: paused;
+  animation-play-state: paused;
 }
 
 .material-symbols-outlined.filled,
 .fill-icon {
-    font-variation-settings: 'FILL' 1;
+  font-variation-settings: "FILL" 1;
 }

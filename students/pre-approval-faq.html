@@ -1,211 +1,347 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Pre-Approval FAQ - LA Science Fair</title>
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Public+Sans:wght@600;700&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Public+Sans:wght@600;700&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries,typography"></script>
     <script src="../js/tailwind-config.js"></script>
     <link rel="stylesheet" href="../css/styles.css" />
     <script src="../js/components.js"></script>
-</head>
-<body class="antialiased text-on-surface bg-background min-h-screen flex flex-col">
+  </head>
+  <body class="antialiased text-on-surface bg-background min-h-screen flex flex-col">
     <div id="site-header"></div>
 
-    <main class="flex-grow max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-stack-xl w-full">
+    <main
+      class="flex-grow max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-stack-xl w-full">
+      <nav class="mb-stack-lg">
+        <a
+          href="../students.html"
+          class="flex items-center gap-1 font-label-md text-label-md text-secondary hover:text-primary transition-colors w-fit">
+          <span class="material-symbols-outlined text-[18px]">arrow_back</span>
+          Student Resources
+        </a>
+      </nav>
 
-        <nav class="mb-stack-lg">
-            <a href="../students.html" class="flex items-center gap-1 font-label-md text-label-md text-secondary hover:text-primary transition-colors w-fit">
-                <span class="material-symbols-outlined text-[18px]">arrow_back</span>
-                Student Resources
-            </a>
-        </nav>
+      <header class="mb-stack-xl max-w-3xl">
+        <h1 class="font-headline-xl text-headline-xl text-primary mb-stack-sm">Pre-Approval FAQ</h1>
+        <p class="font-body-lg text-body-lg text-on-surface-variant">
+          Answers to common questions about which projects require pre-approval and how to submit
+          your proposal to the Science Review Committee (SRC).
+        </p>
+      </header>
 
-        <header class="mb-stack-xl max-w-3xl">
-            <h1 class="font-headline-xl text-headline-xl text-primary mb-stack-sm">Pre-Approval FAQ</h1>
-            <p class="font-body-lg text-body-lg text-on-surface-variant">
-                Answers to common questions about which projects require pre-approval and how to submit your proposal to the Science Review Committee (SRC).
+      <div class="flex flex-col gap-stack-xl max-w-3xl">
+        <!-- 4 Steps -->
+        <section class="bg-surface border border-outline-variant rounded-xl p-stack-lg">
+          <div class="flex items-center gap-2 mb-stack-md">
+            <span class="material-symbols-outlined text-primary-container">checklist</span>
+            <h2 class="font-headline-md text-headline-md text-primary">
+              4 Steps for Submitting a Pre-Approval Proposal
+            </h2>
+          </div>
+          <ol class="flex flex-col gap-stack-md">
+            <li class="flex gap-stack-md">
+              <span
+                class="w-7 h-7 rounded-full bg-primary-container text-on-primary font-label-md text-label-md flex items-center justify-center shrink-0 text-sm mt-0.5"
+                >1</span
+              >
+              <p class="font-body-md text-body-md text-secondary">
+                Site Coordinator enrolls school in the online system.
+              </p>
+            </li>
+            <li class="flex gap-stack-md">
+              <span
+                class="w-7 h-7 rounded-full bg-primary-container text-on-primary font-label-md text-label-md flex items-center justify-center shrink-0 text-sm mt-0.5"
+                >2</span
+              >
+              <p class="font-body-md text-body-md text-secondary">
+                Student logs into the online registration system and enters their information.
+              </p>
+            </li>
+            <li class="flex gap-stack-md">
+              <span
+                class="w-7 h-7 rounded-full bg-primary-container text-on-primary font-label-md text-label-md flex items-center justify-center shrink-0 text-sm mt-0.5"
+                >3</span
+              >
+              <p class="font-body-md text-body-md text-secondary">
+                Student receives a password via email.
+              </p>
+            </li>
+            <li class="flex gap-stack-md">
+              <span
+                class="w-7 h-7 rounded-full bg-primary-container text-on-primary font-label-md text-label-md flex items-center justify-center shrink-0 text-sm mt-0.5"
+                >4</span
+              >
+              <p class="font-body-md text-body-md text-secondary">
+                Student logs back into the registration system and enters their pre-approval
+                proposal.
+              </p>
+            </li>
+          </ol>
+        </section>
+
+        <!-- Human Subjects -->
+        <section class="bg-surface border border-outline-variant rounded-xl p-stack-lg">
+          <div class="flex items-center gap-2 mb-stack-md">
+            <span class="material-symbols-outlined text-primary-container">people</span>
+            <h2 class="font-headline-md text-headline-md text-primary">
+              Human Subjects &amp; Activities
+            </h2>
+          </div>
+          <p class="font-body-md text-body-md text-secondary mb-stack-sm">
+            Pre-approval is required for any project where participants:
+          </p>
+          <ul class="flex flex-col gap-2 mb-stack-md">
+            <li class="flex items-start gap-2 font-body-md text-body-md text-secondary text-sm">
+              <span
+                class="material-symbols-outlined text-primary-container text-[16px] mt-0.5 shrink-0"
+                >check_circle</span
+              >Are surveyed about their habits (eating, screen time, preferences)
+            </li>
+            <li class="flex items-start gap-2 font-body-md text-body-md text-secondary text-sm">
+              <span
+                class="material-symbols-outlined text-primary-container text-[16px] mt-0.5 shrink-0"
+                >check_circle</span
+              >Take tests or quizzes
+            </li>
+            <li class="flex items-start gap-2 font-body-md text-body-md text-secondary text-sm">
+              <span
+                class="material-symbols-outlined text-primary-container text-[16px] mt-0.5 shrink-0"
+                >check_circle</span
+              >Perform physical activities (jumping rope, running, video games, blindfolded walking)
+            </li>
+            <li class="flex items-start gap-2 font-body-md text-body-md text-secondary text-sm">
+              <span
+                class="material-symbols-outlined text-primary-container text-[16px] mt-0.5 shrink-0"
+                >check_circle</span
+              >Consume medications, herbs, or food/drink substances
+            </li>
+          </ul>
+          <p class="font-body-md text-body-md text-secondary text-sm">
+            The SRC ensures participant safety, prevents injuries, maintains confidentiality, and
+            prohibits use of identifying information.
+          </p>
+        </section>
+
+        <!-- Prohibited -->
+        <section class="bg-surface border border-outline-variant rounded-xl p-stack-lg">
+          <div class="flex items-center gap-2 mb-stack-md">
+            <span class="material-symbols-outlined text-primary-container">block</span>
+            <h2 class="font-headline-md text-headline-md text-primary">Prohibited Activities</h2>
+          </div>
+          <ul class="flex flex-col gap-stack-sm">
+            <li
+              class="bg-surface-container-low rounded p-stack-sm font-body-md text-body-md text-secondary text-sm">
+              <strong class="text-primary block mb-1">Medications &amp; Medical Procedures</strong>
+              California Education Code prohibits students from administering medications or
+              performing medical procedures on human subjects or vertebrate animals, with limited
+              exceptions for veterinary supervision of personal animals.
+            </li>
+            <li
+              class="bg-surface-container-low rounded p-stack-sm font-body-md text-body-md text-secondary text-sm">
+              <strong class="text-primary block mb-1">Firearms</strong>
+              California Education Code prohibits students from using firearms in any project.
+            </li>
+            <li
+              class="bg-surface-container-low rounded p-stack-sm font-body-md text-body-md text-secondary text-sm">
+              <strong class="text-primary block mb-1">Growing Microbes at Home</strong>
+              Culturing microbes in home kitchens is prohibited due to institutional culturing
+              regulations.
+            </li>
+          </ul>
+        </section>
+
+        <!-- Biological Materials -->
+        <section class="bg-surface border border-outline-variant rounded-xl p-stack-lg">
+          <div class="flex items-center gap-2 mb-stack-md">
+            <span class="material-symbols-outlined text-primary-container">biotech</span>
+            <h2 class="font-headline-md text-headline-md text-primary">Biological Materials</h2>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-gutter">
+            <div>
+              <h3
+                class="font-label-md text-label-md text-primary mb-stack-sm flex items-center gap-1">
+                <span class="material-symbols-outlined text-[16px] text-secondary"
+                  >check_circle</span
+                >
+                No pre-approval needed
+              </h3>
+              <ul class="flex flex-col gap-1">
+                <li class="font-body-md text-body-md text-secondary text-sm">Plant cells</li>
+                <li class="font-body-md text-body-md text-secondary text-sm">
+                  Animal cells from grocery store meat
+                </li>
+                <li class="font-body-md text-body-md text-secondary text-sm">
+                  Hair that has been cut (not pulled with follicle)
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3
+                class="font-label-md text-label-md text-primary mb-stack-sm flex items-center gap-1">
+                <span class="material-symbols-outlined text-[16px] text-primary-container"
+                  >warning</span
+                >
+                Pre-approval required
+              </h3>
+              <ul class="flex flex-col gap-1">
+                <li class="font-body-md text-body-md text-secondary text-sm">
+                  Hair pulled with attached follicles
+                </li>
+                <li class="font-body-md text-body-md text-secondary text-sm">
+                  Cheek or skin cells from self or others
+                </li>
+                <li class="font-body-md text-body-md text-secondary text-sm">
+                  Any cultured bacteria or microbes
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Vertebrate Animals -->
+        <section class="bg-surface border border-outline-variant rounded-xl p-stack-lg">
+          <div class="flex items-center gap-2 mb-stack-md">
+            <span class="material-symbols-outlined text-primary-container">pets</span>
+            <h2 class="font-headline-md text-headline-md text-primary">Vertebrate Animals</h2>
+          </div>
+          <div class="flex flex-col gap-stack-sm font-body-md text-body-md text-secondary">
+            <p>
+              All projects involving live vertebrate animals require veterinary supervision to
+              ensure humane treatment and proper post-experiment care. Animals cannot be killed,
+              released into the wild, returned to stores, or given to shelters.
             </p>
-        </header>
+            <p>
+              Observing natural animal behavior without manipulation does not require pre-approval.
+              Any environmental manipulation or potential danger to the animal does require
+              pre-approval.
+            </p>
+          </div>
+        </section>
 
-        <div class="flex flex-col gap-stack-xl max-w-3xl">
+        <!-- Hazardous Materials -->
+        <section class="bg-surface border border-outline-variant rounded-xl p-stack-lg">
+          <div class="flex items-center gap-2 mb-stack-md">
+            <span class="material-symbols-outlined text-primary-container">dangerous</span>
+            <h2 class="font-headline-md text-headline-md text-primary">
+              Hazardous Materials &amp; Equipment
+            </h2>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-gutter">
+            <div>
+              <h3
+                class="font-label-md text-label-md text-primary mb-stack-sm flex items-center gap-1">
+                <span class="material-symbols-outlined text-[16px] text-primary-container"
+                  >warning</span
+                >
+                Pre-approval required
+              </h3>
+              <ul class="flex flex-col gap-1">
+                <li class="font-body-md text-body-md text-secondary text-sm">
+                  All lasers (Classes I–IV)
+                </li>
+                <li class="font-body-md text-body-md text-secondary text-sm">
+                  Car batteries (wet cell)
+                </li>
+                <li class="font-body-md text-body-md text-secondary text-sm">Paintball guns</li>
+                <li class="font-body-md text-body-md text-secondary text-sm">Archery equipment</li>
+                <li class="font-body-md text-body-md text-secondary text-sm">
+                  Burning solid substances outside school
+                </li>
+                <li class="font-body-md text-body-md text-secondary text-sm">
+                  Burning chemicals or motor oil
+                </li>
+                <li class="font-body-md text-body-md text-secondary text-sm">
+                  Hazardous household chemicals (ammonia, bleach)
+                </li>
+                <li class="font-body-md text-body-md text-secondary text-sm">
+                  Non-household chemicals (check Safety Data Sheets)
+                </li>
+                <li class="font-body-md text-body-md text-secondary text-sm">
+                  Rockets (even sealed kits)
+                </li>
+                <li class="font-body-md text-body-md text-secondary text-sm">
+                  Gasoline-powered or remote-control cars
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3
+                class="font-label-md text-label-md text-primary mb-stack-sm flex items-center gap-1">
+                <span class="material-symbols-outlined text-[16px] text-secondary"
+                  >check_circle</span
+                >
+                No pre-approval needed
+              </h3>
+              <ul class="flex flex-col gap-1">
+                <li class="font-body-md text-body-md text-secondary text-sm">
+                  Candles (with proper safety precautions)
+                </li>
+                <li class="font-body-md text-body-md text-secondary text-sm">
+                  Battery-operated RC cars
+                </li>
+                <li class="font-body-md text-body-md text-secondary text-sm">
+                  Most household chemicals used as intended (vinegar, baking soda, soap)
+                </li>
+                <li class="font-body-md text-body-md text-secondary text-sm">
+                  Yeast used for baking (not culturing)
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
 
-            <!-- 4 Steps -->
-            <section class="bg-surface border border-outline-variant rounded-xl p-stack-lg">
-                <div class="flex items-center gap-2 mb-stack-md">
-                    <span class="material-symbols-outlined text-primary-container">checklist</span>
-                    <h2 class="font-headline-md text-headline-md text-primary">4 Steps for Submitting a Pre-Approval Proposal</h2>
-                </div>
-                <ol class="flex flex-col gap-stack-md">
-                    <li class="flex gap-stack-md">
-                        <span class="w-7 h-7 rounded-full bg-primary-container text-on-primary font-label-md text-label-md flex items-center justify-center shrink-0 text-sm mt-0.5">1</span>
-                        <p class="font-body-md text-body-md text-secondary">Site Coordinator enrolls school in the online system.</p>
-                    </li>
-                    <li class="flex gap-stack-md">
-                        <span class="w-7 h-7 rounded-full bg-primary-container text-on-primary font-label-md text-label-md flex items-center justify-center shrink-0 text-sm mt-0.5">2</span>
-                        <p class="font-body-md text-body-md text-secondary">Student logs into the online registration system and enters their information.</p>
-                    </li>
-                    <li class="flex gap-stack-md">
-                        <span class="w-7 h-7 rounded-full bg-primary-container text-on-primary font-label-md text-label-md flex items-center justify-center shrink-0 text-sm mt-0.5">3</span>
-                        <p class="font-body-md text-body-md text-secondary">Student receives a password via email.</p>
-                    </li>
-                    <li class="flex gap-stack-md">
-                        <span class="w-7 h-7 rounded-full bg-primary-container text-on-primary font-label-md text-label-md flex items-center justify-center shrink-0 text-sm mt-0.5">4</span>
-                        <p class="font-body-md text-body-md text-secondary">Student logs back into the registration system and enters their pre-approval proposal.</p>
-                    </li>
-                </ol>
-            </section>
-
-            <!-- Human Subjects -->
-            <section class="bg-surface border border-outline-variant rounded-xl p-stack-lg">
-                <div class="flex items-center gap-2 mb-stack-md">
-                    <span class="material-symbols-outlined text-primary-container">people</span>
-                    <h2 class="font-headline-md text-headline-md text-primary">Human Subjects &amp; Activities</h2>
-                </div>
-                <p class="font-body-md text-body-md text-secondary mb-stack-sm">Pre-approval is required for any project where participants:</p>
-                <ul class="flex flex-col gap-2 mb-stack-md">
-                    <li class="flex items-start gap-2 font-body-md text-body-md text-secondary text-sm"><span class="material-symbols-outlined text-primary-container text-[16px] mt-0.5 shrink-0">check_circle</span>Are surveyed about their habits (eating, screen time, preferences)</li>
-                    <li class="flex items-start gap-2 font-body-md text-body-md text-secondary text-sm"><span class="material-symbols-outlined text-primary-container text-[16px] mt-0.5 shrink-0">check_circle</span>Take tests or quizzes</li>
-                    <li class="flex items-start gap-2 font-body-md text-body-md text-secondary text-sm"><span class="material-symbols-outlined text-primary-container text-[16px] mt-0.5 shrink-0">check_circle</span>Perform physical activities (jumping rope, running, video games, blindfolded walking)</li>
-                    <li class="flex items-start gap-2 font-body-md text-body-md text-secondary text-sm"><span class="material-symbols-outlined text-primary-container text-[16px] mt-0.5 shrink-0">check_circle</span>Consume medications, herbs, or food/drink substances</li>
-                </ul>
-                <p class="font-body-md text-body-md text-secondary text-sm">The SRC ensures participant safety, prevents injuries, maintains confidentiality, and prohibits use of identifying information.</p>
-            </section>
-
-            <!-- Prohibited -->
-            <section class="bg-surface border border-outline-variant rounded-xl p-stack-lg">
-                <div class="flex items-center gap-2 mb-stack-md">
-                    <span class="material-symbols-outlined text-primary-container">block</span>
-                    <h2 class="font-headline-md text-headline-md text-primary">Prohibited Activities</h2>
-                </div>
-                <ul class="flex flex-col gap-stack-sm">
-                    <li class="bg-surface-container-low rounded p-stack-sm font-body-md text-body-md text-secondary text-sm">
-                        <strong class="text-primary block mb-1">Medications &amp; Medical Procedures</strong>
-                        California Education Code prohibits students from administering medications or performing medical procedures on human subjects or vertebrate animals, with limited exceptions for veterinary supervision of personal animals.
-                    </li>
-                    <li class="bg-surface-container-low rounded p-stack-sm font-body-md text-body-md text-secondary text-sm">
-                        <strong class="text-primary block mb-1">Firearms</strong>
-                        California Education Code prohibits students from using firearms in any project.
-                    </li>
-                    <li class="bg-surface-container-low rounded p-stack-sm font-body-md text-body-md text-secondary text-sm">
-                        <strong class="text-primary block mb-1">Growing Microbes at Home</strong>
-                        Culturing microbes in home kitchens is prohibited due to institutional culturing regulations.
-                    </li>
-                </ul>
-            </section>
-
-            <!-- Biological Materials -->
-            <section class="bg-surface border border-outline-variant rounded-xl p-stack-lg">
-                <div class="flex items-center gap-2 mb-stack-md">
-                    <span class="material-symbols-outlined text-primary-container">biotech</span>
-                    <h2 class="font-headline-md text-headline-md text-primary">Biological Materials</h2>
-                </div>
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-gutter">
-                    <div>
-                        <h3 class="font-label-md text-label-md text-primary mb-stack-sm flex items-center gap-1">
-                            <span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span> No pre-approval needed
-                        </h3>
-                        <ul class="flex flex-col gap-1">
-                            <li class="font-body-md text-body-md text-secondary text-sm">Plant cells</li>
-                            <li class="font-body-md text-body-md text-secondary text-sm">Animal cells from grocery store meat</li>
-                            <li class="font-body-md text-body-md text-secondary text-sm">Hair that has been cut (not pulled with follicle)</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h3 class="font-label-md text-label-md text-primary mb-stack-sm flex items-center gap-1">
-                            <span class="material-symbols-outlined text-[16px] text-primary-container">warning</span> Pre-approval required
-                        </h3>
-                        <ul class="flex flex-col gap-1">
-                            <li class="font-body-md text-body-md text-secondary text-sm">Hair pulled with attached follicles</li>
-                            <li class="font-body-md text-body-md text-secondary text-sm">Cheek or skin cells from self or others</li>
-                            <li class="font-body-md text-body-md text-secondary text-sm">Any cultured bacteria or microbes</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Vertebrate Animals -->
-            <section class="bg-surface border border-outline-variant rounded-xl p-stack-lg">
-                <div class="flex items-center gap-2 mb-stack-md">
-                    <span class="material-symbols-outlined text-primary-container">pets</span>
-                    <h2 class="font-headline-md text-headline-md text-primary">Vertebrate Animals</h2>
-                </div>
-                <div class="flex flex-col gap-stack-sm font-body-md text-body-md text-secondary">
-                    <p>All projects involving live vertebrate animals require veterinary supervision to ensure humane treatment and proper post-experiment care. Animals cannot be killed, released into the wild, returned to stores, or given to shelters.</p>
-                    <p>Observing natural animal behavior without manipulation does not require pre-approval. Any environmental manipulation or potential danger to the animal does require pre-approval.</p>
-                </div>
-            </section>
-
-            <!-- Hazardous Materials -->
-            <section class="bg-surface border border-outline-variant rounded-xl p-stack-lg">
-                <div class="flex items-center gap-2 mb-stack-md">
-                    <span class="material-symbols-outlined text-primary-container">dangerous</span>
-                    <h2 class="font-headline-md text-headline-md text-primary">Hazardous Materials &amp; Equipment</h2>
-                </div>
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-gutter">
-                    <div>
-                        <h3 class="font-label-md text-label-md text-primary mb-stack-sm flex items-center gap-1">
-                            <span class="material-symbols-outlined text-[16px] text-primary-container">warning</span> Pre-approval required
-                        </h3>
-                        <ul class="flex flex-col gap-1">
-                            <li class="font-body-md text-body-md text-secondary text-sm">All lasers (Classes I–IV)</li>
-                            <li class="font-body-md text-body-md text-secondary text-sm">Car batteries (wet cell)</li>
-                            <li class="font-body-md text-body-md text-secondary text-sm">Paintball guns</li>
-                            <li class="font-body-md text-body-md text-secondary text-sm">Archery equipment</li>
-                            <li class="font-body-md text-body-md text-secondary text-sm">Burning solid substances outside school</li>
-                            <li class="font-body-md text-body-md text-secondary text-sm">Burning chemicals or motor oil</li>
-                            <li class="font-body-md text-body-md text-secondary text-sm">Hazardous household chemicals (ammonia, bleach)</li>
-                            <li class="font-body-md text-body-md text-secondary text-sm">Non-household chemicals (check Safety Data Sheets)</li>
-                            <li class="font-body-md text-body-md text-secondary text-sm">Rockets (even sealed kits)</li>
-                            <li class="font-body-md text-body-md text-secondary text-sm">Gasoline-powered or remote-control cars</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h3 class="font-label-md text-label-md text-primary mb-stack-sm flex items-center gap-1">
-                            <span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span> No pre-approval needed
-                        </h3>
-                        <ul class="flex flex-col gap-1">
-                            <li class="font-body-md text-body-md text-secondary text-sm">Candles (with proper safety precautions)</li>
-                            <li class="font-body-md text-body-md text-secondary text-sm">Battery-operated RC cars</li>
-                            <li class="font-body-md text-body-md text-secondary text-sm">Most household chemicals used as intended (vinegar, baking soda, soap)</li>
-                            <li class="font-body-md text-body-md text-secondary text-sm">Yeast used for baking (not culturing)</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Microbes -->
-            <section class="bg-surface border border-outline-variant rounded-xl p-stack-lg">
-                <div class="flex items-center gap-2 mb-stack-md">
-                    <span class="material-symbols-outlined text-primary-container">coronavirus</span>
-                    <h2 class="font-headline-md text-headline-md text-primary">Microbes, Bacteria &amp; Yeast</h2>
-                </div>
-                <div class="flex flex-col gap-stack-md">
-                    <div>
-                        <h3 class="font-label-md text-label-md text-primary mb-1">Bacteria</h3>
-                        <p class="font-body-md text-body-md text-secondary text-sm">Culturing any bacteria requires SRC approval. Prohibited species include MRSA, VRE, and multi-antibiotic resistant bacteria. Streptococcus and Staphylococcus require pre-approval and supporting institutional signatures.</p>
-                    </div>
-                    <div>
-                        <h3 class="font-label-md text-label-md text-primary mb-1">Mold</h3>
-                        <p class="font-body-md text-body-md text-secondary text-sm">Growing mold colonies on petri dishes requires pre-approval. Growing mold on food outside the house with disposal at first appearance does not require approval.</p>
-                    </div>
-                    <div>
-                        <h3 class="font-label-md text-label-md text-primary mb-1">Yeast</h3>
-                        <p class="font-body-md text-body-md text-secondary text-sm">Culturing large yeast colonies requires SRC pre-approval. Baking applications (e.g., making bread) do not.</p>
-                    </div>
-                    <div class="bg-surface-container-low rounded p-stack-sm">
-                        <p class="font-body-md text-body-md text-secondary text-sm italic">Important: Growing microbes in home kitchens is prohibited regardless of pre-approval status.</p>
-                    </div>
-                </div>
-            </section>
-
-        </div>
+        <!-- Microbes -->
+        <section class="bg-surface border border-outline-variant rounded-xl p-stack-lg">
+          <div class="flex items-center gap-2 mb-stack-md">
+            <span class="material-symbols-outlined text-primary-container">coronavirus</span>
+            <h2 class="font-headline-md text-headline-md text-primary">
+              Microbes, Bacteria &amp; Yeast
+            </h2>
+          </div>
+          <div class="flex flex-col gap-stack-md">
+            <div>
+              <h3 class="font-label-md text-label-md text-primary mb-1">Bacteria</h3>
+              <p class="font-body-md text-body-md text-secondary text-sm">
+                Culturing any bacteria requires SRC approval. Prohibited species include MRSA, VRE,
+                and multi-antibiotic resistant bacteria. Streptococcus and Staphylococcus require
+                pre-approval and supporting institutional signatures.
+              </p>
+            </div>
+            <div>
+              <h3 class="font-label-md text-label-md text-primary mb-1">Mold</h3>
+              <p class="font-body-md text-body-md text-secondary text-sm">
+                Growing mold colonies on petri dishes requires pre-approval. Growing mold on food
+                outside the house with disposal at first appearance does not require approval.
+              </p>
+            </div>
+            <div>
+              <h3 class="font-label-md text-label-md text-primary mb-1">Yeast</h3>
+              <p class="font-body-md text-body-md text-secondary text-sm">
+                Culturing large yeast colonies requires SRC pre-approval. Baking applications (e.g.,
+                making bread) do not.
+              </p>
+            </div>
+            <div class="bg-surface-container-low rounded p-stack-sm">
+              <p class="font-body-md text-body-md text-secondary text-sm italic">
+                Important: Growing microbes in home kitchens is prohibited regardless of
+                pre-approval status.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
 
     <div id="site-footer"></div>
-</body>
+  </body>
 </html>

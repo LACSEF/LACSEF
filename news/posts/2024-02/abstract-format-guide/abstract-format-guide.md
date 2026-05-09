@@ -14,10 +14,10 @@ A great abstract hits four points in this order:
 - Starting with background instead of the question
 - Using jargon without defining it
 - Burying the results in methodology
-- Ending without saying *why* the work matters
+- Ending without saying _why_ the work matters
 
 ## Strong Example
 
-> *"Wildfires increasingly threaten Southern California chaparral ecosystems. We measured post-fire recovery rates of three native shrubs at five sites in the Santa Monica Mountains over twelve months..."*
+> _"Wildfires increasingly threaten Southern California chaparral ecosystems. We measured post-fire recovery rates of three native shrubs at five sites in the Santa Monica Mountains over twelve months..."_
 
 Notice how the question is in sentence one, the method follows immediately, and the reader knows exactly what's coming.

@@ -1,132 +1,207 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Understanding SRC Results - LA Science Fair</title>
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Public+Sans:wght@600;700&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Public+Sans:wght@600;700&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries,typography"></script>
     <script src="../js/tailwind-config.js"></script>
     <link rel="stylesheet" href="../css/styles.css" />
     <script src="../js/components.js"></script>
-</head>
-<body class="antialiased text-on-surface bg-background min-h-screen flex flex-col">
+  </head>
+  <body class="antialiased text-on-surface bg-background min-h-screen flex flex-col">
     <div id="site-header"></div>
 
-    <main class="flex-grow max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-stack-xl w-full">
+    <main
+      class="flex-grow max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-stack-xl w-full">
+      <nav class="mb-stack-lg">
+        <a
+          href="../students.html"
+          class="flex items-center gap-1 font-label-md text-label-md text-secondary hover:text-primary transition-colors w-fit">
+          <span class="material-symbols-outlined text-[18px]">arrow_back</span>
+          Student Resources
+        </a>
+      </nav>
 
-        <nav class="mb-stack-lg">
-            <a href="../students.html" class="flex items-center gap-1 font-label-md text-label-md text-secondary hover:text-primary transition-colors w-fit">
-                <span class="material-symbols-outlined text-[18px]">arrow_back</span>
-                Student Resources
-            </a>
-        </nav>
+      <header class="mb-stack-xl max-w-3xl">
+        <h1 class="font-headline-xl text-headline-xl text-primary mb-stack-sm">
+          Understanding SRC Results
+        </h1>
+        <p class="font-body-lg text-body-lg text-on-surface-variant">
+          As the Science Review Committee (SRC) evaluates projects, here's how to read each status
+          in the online registration dashboard and what to do next.
+        </p>
+      </header>
 
-        <header class="mb-stack-xl max-w-3xl">
-            <h1 class="font-headline-xl text-headline-xl text-primary mb-stack-sm">Understanding SRC Results</h1>
-            <p class="font-body-lg text-body-lg text-on-surface-variant">
-                As the Science Review Committee (SRC) evaluates projects, here's how to read each status in the online registration dashboard and what to do next.
+      <div class="flex flex-col gap-stack-xl max-w-3xl">
+        <!-- Status Reference -->
+        <section>
+          <div class="flex items-center gap-2 mb-stack-md">
+            <span class="material-symbols-outlined text-primary-container">fact_check</span>
+            <h2 class="font-headline-md text-headline-md text-primary">Status Indicators</h2>
+          </div>
+          <div class="flex flex-col gap-stack-sm">
+            <div
+              class="bg-surface border border-outline-variant rounded-xl p-stack-md flex gap-stack-md">
+              <span class="material-symbols-outlined text-secondary shrink-0 mt-0.5"
+                >hourglass_empty</span
+              >
+              <div>
+                <h3 class="font-label-md text-label-md text-primary mb-1">Awaiting Verification</h3>
+                <p class="font-body-md text-body-md text-secondary text-sm">
+                  One or more supervising adults haven't confirmed their role. Check email
+                  (including spam) for messages from
+                  <span class="font-mono text-primary">noreply@lascifair.org</span>. If links have
+                  expired or weren't received, contact
+                  <span class="font-mono text-primary">president@lascifair.org</span>.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="bg-surface border border-outline-variant rounded-xl p-stack-md flex gap-stack-md">
+              <span class="material-symbols-outlined text-secondary shrink-0 mt-0.5"
+                >hourglass_top</span
+              >
+              <div>
+                <h3 class="font-label-md text-label-md text-primary mb-1">
+                  Awaiting Level 1 Review
+                </h3>
+                <p class="font-body-md text-body-md text-secondary text-sm">
+                  All verifications are complete. Your project is in the queue for the first SRC
+                  reviewer.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="bg-surface border border-outline-variant rounded-xl p-stack-md flex gap-stack-md">
+              <span class="material-symbols-outlined text-secondary shrink-0 mt-0.5"
+                >rate_review</span
+              >
+              <div>
+                <h3 class="font-label-md text-label-md text-primary mb-1">
+                  Level 1 Recommended Revision
+                </h3>
+                <p class="font-body-md text-body-md text-secondary text-sm">
+                  The first reviewer flagged concerns. The project automatically advances to a
+                  second reviewer — no action needed yet.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="bg-surface border border-outline-variant rounded-xl p-stack-md flex gap-stack-md">
+              <span class="material-symbols-outlined text-secondary shrink-0 mt-0.5">thumb_up</span>
+              <div>
+                <h3 class="font-label-md text-label-md text-primary mb-1">
+                  Level 1 Recommended Acceptance
+                </h3>
+                <p class="font-body-md text-body-md text-secondary text-sm">
+                  The first reviewer approved. The project advances to a second reviewer for
+                  confirmation.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="bg-surface border border-outline-variant rounded-xl p-stack-md flex gap-stack-md">
+              <span class="material-symbols-outlined text-secondary shrink-0 mt-0.5"
+                >hourglass_top</span
+              >
+              <div>
+                <h3 class="font-label-md text-label-md text-primary mb-1">
+                  Awaiting Level 2 Review
+                </h3>
+                <p class="font-body-md text-body-md text-secondary text-sm">
+                  Your project is pending assessment from the second reviewer.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="bg-surface border-l-4 border-yellow-500 rounded-r-xl p-stack-md flex gap-stack-md">
+              <span class="material-symbols-outlined text-yellow-600 shrink-0 mt-0.5"
+                >edit_note</span
+              >
+              <div>
+                <h3 class="font-label-md text-label-md text-primary mb-1">Needs Revision</h3>
+                <p class="font-body-md text-body-md text-secondary text-sm">
+                  The second reviewer rejected the proposal. You have
+                  <strong class="text-primary">one opportunity</strong> to address all comments from
+                  both reviewers and resubmit before the deadline.
+                  <strong class="text-primary"
+                    >Experimentation cannot begin without approval.</strong
+                  >
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="bg-surface border-l-4 border-green-500 rounded-r-xl p-stack-md flex gap-stack-md">
+              <span class="material-symbols-outlined text-green-600 shrink-0 mt-0.5"
+                >check_circle</span
+              >
+              <div>
+                <h3 class="font-label-md text-label-md text-primary mb-1">Accepted</h3>
+                <p class="font-body-md text-body-md text-secondary text-sm">
+                  Your proposal has been approved. You may now commence experimentation.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="bg-surface border border-outline-variant rounded-xl p-stack-md flex gap-stack-md">
+              <span class="material-symbols-outlined text-secondary shrink-0 mt-0.5">gavel</span>
+              <div>
+                <h3 class="font-label-md text-label-md text-primary mb-1">
+                  Awaiting Level 3 Review
+                </h3>
+                <p class="font-body-md text-body-md text-secondary text-sm">
+                  The second reviewer requested a third-party evaluation. That reviewer's decision
+                  is final.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Resubmission -->
+        <section class="bg-surface border border-outline-variant rounded-xl p-stack-lg">
+          <div class="flex items-center gap-2 mb-stack-md">
+            <span class="material-symbols-outlined text-primary-container">refresh</span>
+            <h2 class="font-headline-md text-headline-md text-primary">
+              Resubmission &amp; Post-Approval Changes
+            </h2>
+          </div>
+          <div class="flex flex-col gap-stack-sm font-body-md text-body-md text-secondary">
+            <p>
+              After approval, editing is disabled. If you need to make changes to an approved
+              project, email
+              <span class="font-mono text-primary">pre-approval@lascifair.org</span> with a full
+              explanation.
             </p>
-        </header>
-
-        <div class="flex flex-col gap-stack-xl max-w-3xl">
-
-            <!-- Status Reference -->
-            <section>
-                <div class="flex items-center gap-2 mb-stack-md">
-                    <span class="material-symbols-outlined text-primary-container">fact_check</span>
-                    <h2 class="font-headline-md text-headline-md text-primary">Status Indicators</h2>
-                </div>
-                <div class="flex flex-col gap-stack-sm">
-
-                    <div class="bg-surface border border-outline-variant rounded-xl p-stack-md flex gap-stack-md">
-                        <span class="material-symbols-outlined text-secondary shrink-0 mt-0.5">hourglass_empty</span>
-                        <div>
-                            <h3 class="font-label-md text-label-md text-primary mb-1">Awaiting Verification</h3>
-                            <p class="font-body-md text-body-md text-secondary text-sm">One or more supervising adults haven't confirmed their role. Check email (including spam) for messages from <span class="font-mono text-primary">noreply@lascifair.org</span>. If links have expired or weren't received, contact <span class="font-mono text-primary">president@lascifair.org</span>.</p>
-                        </div>
-                    </div>
-
-                    <div class="bg-surface border border-outline-variant rounded-xl p-stack-md flex gap-stack-md">
-                        <span class="material-symbols-outlined text-secondary shrink-0 mt-0.5">hourglass_top</span>
-                        <div>
-                            <h3 class="font-label-md text-label-md text-primary mb-1">Awaiting Level 1 Review</h3>
-                            <p class="font-body-md text-body-md text-secondary text-sm">All verifications are complete. Your project is in the queue for the first SRC reviewer.</p>
-                        </div>
-                    </div>
-
-                    <div class="bg-surface border border-outline-variant rounded-xl p-stack-md flex gap-stack-md">
-                        <span class="material-symbols-outlined text-secondary shrink-0 mt-0.5">rate_review</span>
-                        <div>
-                            <h3 class="font-label-md text-label-md text-primary mb-1">Level 1 Recommended Revision</h3>
-                            <p class="font-body-md text-body-md text-secondary text-sm">The first reviewer flagged concerns. The project automatically advances to a second reviewer — no action needed yet.</p>
-                        </div>
-                    </div>
-
-                    <div class="bg-surface border border-outline-variant rounded-xl p-stack-md flex gap-stack-md">
-                        <span class="material-symbols-outlined text-secondary shrink-0 mt-0.5">thumb_up</span>
-                        <div>
-                            <h3 class="font-label-md text-label-md text-primary mb-1">Level 1 Recommended Acceptance</h3>
-                            <p class="font-body-md text-body-md text-secondary text-sm">The first reviewer approved. The project advances to a second reviewer for confirmation.</p>
-                        </div>
-                    </div>
-
-                    <div class="bg-surface border border-outline-variant rounded-xl p-stack-md flex gap-stack-md">
-                        <span class="material-symbols-outlined text-secondary shrink-0 mt-0.5">hourglass_top</span>
-                        <div>
-                            <h3 class="font-label-md text-label-md text-primary mb-1">Awaiting Level 2 Review</h3>
-                            <p class="font-body-md text-body-md text-secondary text-sm">Your project is pending assessment from the second reviewer.</p>
-                        </div>
-                    </div>
-
-                    <div class="bg-surface border-l-4 border-yellow-500 rounded-r-xl p-stack-md flex gap-stack-md">
-                        <span class="material-symbols-outlined text-yellow-600 shrink-0 mt-0.5">edit_note</span>
-                        <div>
-                            <h3 class="font-label-md text-label-md text-primary mb-1">Needs Revision</h3>
-                            <p class="font-body-md text-body-md text-secondary text-sm">The second reviewer rejected the proposal. You have <strong class="text-primary">one opportunity</strong> to address all comments from both reviewers and resubmit before the deadline. <strong class="text-primary">Experimentation cannot begin without approval.</strong></p>
-                        </div>
-                    </div>
-
-                    <div class="bg-surface border-l-4 border-green-500 rounded-r-xl p-stack-md flex gap-stack-md">
-                        <span class="material-symbols-outlined text-green-600 shrink-0 mt-0.5">check_circle</span>
-                        <div>
-                            <h3 class="font-label-md text-label-md text-primary mb-1">Accepted</h3>
-                            <p class="font-body-md text-body-md text-secondary text-sm">Your proposal has been approved. You may now commence experimentation.</p>
-                        </div>
-                    </div>
-
-                    <div class="bg-surface border border-outline-variant rounded-xl p-stack-md flex gap-stack-md">
-                        <span class="material-symbols-outlined text-secondary shrink-0 mt-0.5">gavel</span>
-                        <div>
-                            <h3 class="font-label-md text-label-md text-primary mb-1">Awaiting Level 3 Review</h3>
-                            <p class="font-body-md text-body-md text-secondary text-sm">The second reviewer requested a third-party evaluation. That reviewer's decision is final.</p>
-                        </div>
-                    </div>
-
-                </div>
-            </section>
-
-            <!-- Resubmission -->
-            <section class="bg-surface border border-outline-variant rounded-xl p-stack-lg">
-                <div class="flex items-center gap-2 mb-stack-md">
-                    <span class="material-symbols-outlined text-primary-container">refresh</span>
-                    <h2 class="font-headline-md text-headline-md text-primary">Resubmission &amp; Post-Approval Changes</h2>
-                </div>
-                <div class="flex flex-col gap-stack-sm font-body-md text-body-md text-secondary">
-                    <p>After approval, editing is disabled. If you need to make changes to an approved project, email <span class="font-mono text-primary">pre-approval@lascifair.org</span> with a full explanation.</p>
-                    <p>Resubmitted projects follow the same review procedure. Approval allows experimentation to proceed.</p>
-                    <div class="bg-surface-container-low rounded p-stack-sm text-sm font-medium text-primary">
-                        All decisions by the SRC Committee are final.
-                    </div>
-                </div>
-            </section>
-
-        </div>
+            <p>
+              Resubmitted projects follow the same review procedure. Approval allows experimentation
+              to proceed.
+            </p>
+            <div
+              class="bg-surface-container-low rounded p-stack-sm text-sm font-medium text-primary">
+              All decisions by the SRC Committee are final.
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
 
     <div id="site-footer"></div>
-</body>
+  </body>
 </html>

@@ -1,85 +1,106 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Category Descriptions - LA Science Fair</title>
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Public+Sans:wght@600;700&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Public+Sans:wght@600;700&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries,typography"></script>
     <script src="js/tailwind-config.js"></script>
     <link rel="stylesheet" href="css/styles.css" />
     <script src="js/components.js"></script>
-</head>
-<body class="antialiased text-on-surface bg-background min-h-screen flex flex-col">
+  </head>
+  <body class="antialiased text-on-surface bg-background min-h-screen flex flex-col">
     <div id="site-header"></div>
 
-    <main class="flex-grow max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-stack-xl w-full">
+    <main
+      class="flex-grow max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-stack-xl w-full">
+      <nav class="mb-stack-lg">
+        <a
+          href="students.html"
+          class="flex items-center gap-1 font-label-md text-label-md text-secondary hover:text-primary transition-colors w-fit">
+          <span class="material-symbols-outlined text-[18px]">arrow_back</span>
+          Student Resources
+        </a>
+      </nav>
 
-        <nav class="mb-stack-lg">
-            <a href="students.html" class="flex items-center gap-1 font-label-md text-label-md text-secondary hover:text-primary transition-colors w-fit">
-                <span class="material-symbols-outlined text-[18px]">arrow_back</span>
-                Student Resources
-            </a>
-        </nav>
+      <header class="mb-stack-xl max-w-3xl">
+        <h1 class="font-headline-xl text-headline-xl text-primary mb-stack-sm">
+          Category Descriptions
+        </h1>
+        <p class="font-body-lg text-body-lg text-on-surface-variant">
+          LACSEF has revised its competition categories for the 2026 fair. Review the full
+          descriptions to find the best fit for your research.
+        </p>
+      </header>
 
-        <header class="mb-stack-xl max-w-3xl">
-            <h1 class="font-headline-xl text-headline-xl text-primary mb-stack-sm">Category Descriptions</h1>
-            <p class="font-body-lg text-body-lg text-on-surface-variant">
-                LACSEF has revised its competition categories for the 2026 fair. Review the full descriptions to find the best fit for your research.
-            </p>
-        </header>
+      <div class="flex flex-col gap-stack-xl max-w-3xl">
+        <!-- 2026 Notice -->
+        <section class="bg-surface border-l-4 border-primary-container rounded-r-xl p-stack-lg">
+          <div class="flex items-center gap-2 mb-stack-sm">
+            <span class="material-symbols-outlined text-primary-container">campaign</span>
+            <h2 class="font-headline-md text-headline-md text-primary">2026 Category Updates</h2>
+          </div>
+          <p class="font-body-md text-body-md text-secondary mb-stack-md">
+            The 2026 fair introduces revised and expanded categories. New areas of focus include:
+          </p>
+          <ul class="flex flex-col gap-2 mb-stack-lg">
+            <li class="flex items-center gap-2 font-body-md text-body-md text-secondary">
+              <span class="material-symbols-outlined text-primary-container text-[18px] shrink-0"
+                >new_releases</span
+              >
+              Applied Computational Science
+            </li>
+            <li class="flex items-center gap-2 font-body-md text-body-md text-secondary">
+              <span class="material-symbols-outlined text-primary-container text-[18px] shrink-0"
+                >new_releases</span
+              >
+              Biomedical Engineering
+            </li>
+            <li class="flex items-center gap-2 font-body-md text-body-md text-secondary">
+              <span class="material-symbols-outlined text-primary-container text-[18px] shrink-0"
+                >new_releases</span
+              >
+              Robotics
+            </li>
+          </ul>
+          <p class="font-body-md text-body-md text-secondary text-sm">
+            Check the full document for all categories, including those carried over from prior
+            years.
+          </p>
+        </section>
 
-        <div class="flex flex-col gap-stack-xl max-w-3xl">
-
-            <!-- 2026 Notice -->
-            <section class="bg-surface border-l-4 border-primary-container rounded-r-xl p-stack-lg">
-                <div class="flex items-center gap-2 mb-stack-sm">
-                    <span class="material-symbols-outlined text-primary-container">campaign</span>
-                    <h2 class="font-headline-md text-headline-md text-primary">2026 Category Updates</h2>
-                </div>
-                <p class="font-body-md text-body-md text-secondary mb-stack-md">
-                    The 2026 fair introduces revised and expanded categories. New areas of focus include:
-                </p>
-                <ul class="flex flex-col gap-2 mb-stack-lg">
-                    <li class="flex items-center gap-2 font-body-md text-body-md text-secondary">
-                        <span class="material-symbols-outlined text-primary-container text-[18px] shrink-0">new_releases</span>
-                        Applied Computational Science
-                    </li>
-                    <li class="flex items-center gap-2 font-body-md text-body-md text-secondary">
-                        <span class="material-symbols-outlined text-primary-container text-[18px] shrink-0">new_releases</span>
-                        Biomedical Engineering
-                    </li>
-                    <li class="flex items-center gap-2 font-body-md text-body-md text-secondary">
-                        <span class="material-symbols-outlined text-primary-container text-[18px] shrink-0">new_releases</span>
-                        Robotics
-                    </li>
-                </ul>
-                <p class="font-body-md text-body-md text-secondary text-sm">Check the full document for all categories, including those carried over from prior years.</p>
-            </section>
-
-            <!-- Full Category Document -->
-            <section class="bg-surface border border-outline-variant rounded-xl p-stack-lg">
-                <div class="flex items-center gap-2 mb-stack-md">
-                    <span class="material-symbols-outlined text-primary-container">description</span>
-                    <h2 class="font-headline-md text-headline-md text-primary">Full Category Descriptions Document</h2>
-                </div>
-                <p class="font-body-md text-body-md text-secondary mb-stack-md">
-                    The complete 2026 category descriptions — including eligibility notes and judging criteria for each area — are available in the official document below.
-                </p>
-                <a href="https://docs.google.com/document/d/1GP_lkn2WChb-j7-eVhQy_eNutCRvu31emsUBil8hE9U/edit?tab=t.0"
-                    target="_blank" rel="noopener noreferrer"
-                    class="inline-flex items-center gap-2 bg-primary-container text-on-primary font-label-md text-label-md px-6 py-3 rounded hover:opacity-90 transition-opacity">
-                    <span class="material-symbols-outlined text-[18px]">open_in_new</span>
-                    Open 2026 Category Descriptions
-                </a>
-            </section>
-
-        </div>
+        <!-- Full Category Document -->
+        <section class="bg-surface border border-outline-variant rounded-xl p-stack-lg">
+          <div class="flex items-center gap-2 mb-stack-md">
+            <span class="material-symbols-outlined text-primary-container">description</span>
+            <h2 class="font-headline-md text-headline-md text-primary">
+              Full Category Descriptions Document
+            </h2>
+          </div>
+          <p class="font-body-md text-body-md text-secondary mb-stack-md">
+            The complete 2026 category descriptions — including eligibility notes and judging
+            criteria for each area — are available in the official document below.
+          </p>
+          <a
+            href="https://docs.google.com/document/d/1GP_lkn2WChb-j7-eVhQy_eNutCRvu31emsUBil8hE9U/edit?tab=t.0"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center gap-2 bg-primary-container text-on-primary font-label-md text-label-md px-6 py-3 rounded hover:opacity-90 transition-opacity">
+            <span class="material-symbols-outlined text-[18px]">open_in_new</span>
+            Open 2026 Category Descriptions
+          </a>
+        </section>
+      </div>
     </main>
 
     <div id="site-footer"></div>
-</body>
+  </body>
 </html>

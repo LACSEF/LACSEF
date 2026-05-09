@@ -1,94 +1,143 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Supervisor Qualifications - LA Science Fair</title>
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Public+Sans:wght@600;700&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Public+Sans:wght@600;700&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries,typography"></script>
     <script src="../js/tailwind-config.js"></script>
     <link rel="stylesheet" href="../css/styles.css" />
     <script src="../js/components.js"></script>
-</head>
-<body class="antialiased text-on-surface bg-background min-h-screen flex flex-col">
+  </head>
+  <body class="antialiased text-on-surface bg-background min-h-screen flex flex-col">
     <div id="site-header"></div>
 
-    <main class="flex-grow max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-stack-xl w-full">
+    <main
+      class="flex-grow max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-stack-xl w-full">
+      <nav class="mb-stack-lg">
+        <a
+          href="../students.html"
+          class="flex items-center gap-1 font-label-md text-label-md text-secondary hover:text-primary transition-colors w-fit">
+          <span class="material-symbols-outlined text-[18px]">arrow_back</span>
+          Student Resources
+        </a>
+      </nav>
 
-        <nav class="mb-stack-lg">
-            <a href="../students.html" class="flex items-center gap-1 font-label-md text-label-md text-secondary hover:text-primary transition-colors w-fit">
-                <span class="material-symbols-outlined text-[18px]">arrow_back</span>
-                Student Resources
-            </a>
-        </nav>
+      <header class="mb-stack-xl max-w-3xl">
+        <h1 class="font-headline-xl text-headline-xl text-primary mb-stack-sm">
+          Supervisor Qualifications
+        </h1>
+        <p class="font-body-lg text-body-lg text-on-surface-variant">
+          Projects involving human participants, vertebrates, hazardous biological agents, or
+          hazardous chemicals require qualified adult supervision per ISEF guidelines as adapted by
+          LACSEF.
+        </p>
+      </header>
 
-        <header class="mb-stack-xl max-w-3xl">
-            <h1 class="font-headline-xl text-headline-xl text-primary mb-stack-sm">Supervisor Qualifications</h1>
-            <p class="font-body-lg text-body-lg text-on-surface-variant">
-                Projects involving human participants, vertebrates, hazardous biological agents, or hazardous chemicals require qualified adult supervision per ISEF guidelines as adapted by LACSEF.
-            </p>
-        </header>
+      <div class="flex flex-col gap-stack-lg max-w-3xl">
+        <section class="bg-surface border border-outline-variant rounded-xl p-stack-lg">
+          <div class="flex items-center gap-2 mb-stack-md">
+            <span class="material-symbols-outlined text-primary-container">school</span>
+            <h2 class="font-headline-md text-headline-md text-primary">
+              Teacher / Advisor (Adult Sponsor)
+            </h2>
+          </div>
+          <p class="font-body-md text-body-md text-secondary mb-stack-sm">
+            Works at the student's school or lab location. Must have a strong science background and
+            close contact with the project. Bears ultimate responsibility for student safety and any
+            test subjects or animals involved.
+          </p>
+          <h3 class="font-label-md text-label-md text-primary mb-stack-sm">Must verify that:</h3>
+          <ul class="flex flex-col gap-2">
+            <li class="flex items-start gap-2 font-body-md text-body-md text-secondary text-sm">
+              <span
+                class="material-symbols-outlined text-primary-container text-[16px] mt-0.5 shrink-0"
+                >check_circle</span
+              >
+              Experimentation complies with local, state, and federal laws and LACSEF screening
+              guidelines
+            </li>
+            <li class="flex items-start gap-2 font-body-md text-body-md text-secondary text-sm">
+              <span
+                class="material-symbols-outlined text-primary-container text-[16px] mt-0.5 shrink-0"
+                >check_circle</span
+              >
+              Required online pre-approval is completed and approved by the Science Review Committee
+              <em>before</em> research begins
+            </li>
+            <li class="flex items-start gap-2 font-body-md text-body-md text-secondary text-sm">
+              <span
+                class="material-symbols-outlined text-primary-container text-[16px] mt-0.5 shrink-0"
+                >check_circle</span
+              >
+              Any Biomedical Scientist supervisor meets established qualifications
+            </li>
+          </ul>
+        </section>
 
-        <div class="flex flex-col gap-stack-lg max-w-3xl">
+        <section class="bg-surface border border-outline-variant rounded-xl p-stack-lg">
+          <div class="flex items-center gap-2 mb-stack-md">
+            <span class="material-symbols-outlined text-primary-container">science</span>
+            <h2 class="font-headline-md text-headline-md text-primary">Biomedical Scientist</h2>
+          </div>
+          <p class="font-body-md text-body-md text-secondary mb-stack-sm">
+            Should hold an earned doctoral or professional degree in the biological or medical
+            sciences relevant to the student's research area. A master's degree with equivalent
+            experience is acceptable when approved by the Teacher/Advisor.
+          </p>
+          <div
+            class="bg-surface-container-low rounded p-stack-sm font-body-md text-body-md text-secondary text-sm">
+            The Biomedical Scientist and Teacher/Advisor may be the same individual if properly
+            qualified. Students may work with a scientist at another location, provided they also
+            work locally with a trained Designated Adult Supervisor.
+          </div>
+        </section>
 
-            <section class="bg-surface border border-outline-variant rounded-xl p-stack-lg">
-                <div class="flex items-center gap-2 mb-stack-md">
-                    <span class="material-symbols-outlined text-primary-container">school</span>
-                    <h2 class="font-headline-md text-headline-md text-primary">Teacher / Advisor (Adult Sponsor)</h2>
-                </div>
-                <p class="font-body-md text-body-md text-secondary mb-stack-sm">Works at the student's school or lab location. Must have a strong science background and close contact with the project. Bears ultimate responsibility for student safety and any test subjects or animals involved.</p>
-                <h3 class="font-label-md text-label-md text-primary mb-stack-sm">Must verify that:</h3>
-                <ul class="flex flex-col gap-2">
-                    <li class="flex items-start gap-2 font-body-md text-body-md text-secondary text-sm">
-                        <span class="material-symbols-outlined text-primary-container text-[16px] mt-0.5 shrink-0">check_circle</span>
-                        Experimentation complies with local, state, and federal laws and LACSEF screening guidelines
-                    </li>
-                    <li class="flex items-start gap-2 font-body-md text-body-md text-secondary text-sm">
-                        <span class="material-symbols-outlined text-primary-container text-[16px] mt-0.5 shrink-0">check_circle</span>
-                        Required online pre-approval is completed and approved by the Science Review Committee <em>before</em> research begins
-                    </li>
-                    <li class="flex items-start gap-2 font-body-md text-body-md text-secondary text-sm">
-                        <span class="material-symbols-outlined text-primary-container text-[16px] mt-0.5 shrink-0">check_circle</span>
-                        Any Biomedical Scientist supervisor meets established qualifications
-                    </li>
-                </ul>
-            </section>
+        <section class="bg-surface border border-outline-variant rounded-xl p-stack-lg">
+          <div class="flex items-center gap-2 mb-stack-md">
+            <span class="material-symbols-outlined text-primary-container">person_check</span>
+            <h2 class="font-headline-md text-headline-md text-primary">
+              Designated Adult Supervisor
+            </h2>
+          </div>
+          <p class="font-body-md text-body-md text-secondary mb-stack-sm">
+            Directly oversees student experimentation. Does not need advanced credentials but
+            <strong class="text-primary"
+              >must be trained in the student's necessary research techniques</strong
+            >. Either the Teacher/Advisor or a parent may serve in this role.
+          </p>
+          <p class="font-body-md text-body-md text-secondary text-sm">
+            For vertebrate projects, the supervisor must understand proper animal care and handling.
+            If not knowledgeable, the Teacher/Advisor must ensure an Animal Care Supervisor is
+            enlisted.
+          </p>
+        </section>
 
-            <section class="bg-surface border border-outline-variant rounded-xl p-stack-lg">
-                <div class="flex items-center gap-2 mb-stack-md">
-                    <span class="material-symbols-outlined text-primary-container">science</span>
-                    <h2 class="font-headline-md text-headline-md text-primary">Biomedical Scientist</h2>
-                </div>
-                <p class="font-body-md text-body-md text-secondary mb-stack-sm">Should hold an earned doctoral or professional degree in the biological or medical sciences relevant to the student's research area. A master's degree with equivalent experience is acceptable when approved by the Teacher/Advisor.</p>
-                <div class="bg-surface-container-low rounded p-stack-sm font-body-md text-body-md text-secondary text-sm">
-                    The Biomedical Scientist and Teacher/Advisor may be the same individual if properly qualified. Students may work with a scientist at another location, provided they also work locally with a trained Designated Adult Supervisor.
-                </div>
-            </section>
-
-            <section class="bg-surface border border-outline-variant rounded-xl p-stack-lg">
-                <div class="flex items-center gap-2 mb-stack-md">
-                    <span class="material-symbols-outlined text-primary-container">person_check</span>
-                    <h2 class="font-headline-md text-headline-md text-primary">Designated Adult Supervisor</h2>
-                </div>
-                <p class="font-body-md text-body-md text-secondary mb-stack-sm">Directly oversees student experimentation. Does not need advanced credentials but <strong class="text-primary">must be trained in the student's necessary research techniques</strong>. Either the Teacher/Advisor or a parent may serve in this role.</p>
-                <p class="font-body-md text-body-md text-secondary text-sm">For vertebrate projects, the supervisor must understand proper animal care and handling. If not knowledgeable, the Teacher/Advisor must ensure an Animal Care Supervisor is enlisted.</p>
-            </section>
-
-            <section class="bg-surface border border-outline-variant rounded-xl p-stack-lg">
-                <div class="flex items-center gap-2 mb-stack-md">
-                    <span class="material-symbols-outlined text-primary-container">pets</span>
-                    <h2 class="font-headline-md text-headline-md text-primary">Animal Care Supervisor</h2>
-                </div>
-                <p class="font-body-md text-body-md text-secondary mb-stack-sm">Required for all projects involving non-human vertebrates. Must understand proper care and handling of the research animals involved.</p>
-                <p class="font-body-md text-body-md text-secondary text-sm">This role may be filled by the Biomedical Scientist, Designated Adult Supervisor, an animal care professional, or the Site Science Fair Coordinator.</p>
-            </section>
-
-        </div>
+        <section class="bg-surface border border-outline-variant rounded-xl p-stack-lg">
+          <div class="flex items-center gap-2 mb-stack-md">
+            <span class="material-symbols-outlined text-primary-container">pets</span>
+            <h2 class="font-headline-md text-headline-md text-primary">Animal Care Supervisor</h2>
+          </div>
+          <p class="font-body-md text-body-md text-secondary mb-stack-sm">
+            Required for all projects involving non-human vertebrates. Must understand proper care
+            and handling of the research animals involved.
+          </p>
+          <p class="font-body-md text-body-md text-secondary text-sm">
+            This role may be filled by the Biomedical Scientist, Designated Adult Supervisor, an
+            animal care professional, or the Site Science Fair Coordinator.
+          </p>
+        </section>
+      </div>
     </main>
 
     <div id="site-footer"></div>
-</body>
+  </body>
 </html>

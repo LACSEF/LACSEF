@@ -4,7 +4,7 @@ Last year's grand prize winner, Sarah Chen, took her low-cost water filtration p
 
 ## From the Fair to the World
 
-Sarah's project, *"A Modular Ceramic Filtration System for Resource-Limited Settings,"* originated as a science class assignment. After winning the LA Fair, she presented at:
+Sarah's project, _"A Modular Ceramic Filtration System for Resource-Limited Settings,"_ originated as a science class assignment. After winning the LA Fair, she presented at:
 
 - The Intel International Science and Engineering Fair (ISEF) — second place
 - The Stockholm Junior Water Prize — finalist

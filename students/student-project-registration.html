@@ -1,125 +1,176 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Student Project Registration - LA Science Fair</title>
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Public+Sans:wght@600;700&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Public+Sans:wght@600;700&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries,typography"></script>
     <script src="../js/tailwind-config.js"></script>
     <link rel="stylesheet" href="../css/styles.css" />
     <script src="../js/components.js"></script>
-</head>
-<body class="antialiased text-on-surface bg-background min-h-screen flex flex-col">
+  </head>
+  <body class="antialiased text-on-surface bg-background min-h-screen flex flex-col">
     <div id="site-header"></div>
 
-    <main class="flex-grow max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-stack-xl w-full">
+    <main
+      class="flex-grow max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-stack-xl w-full">
+      <nav class="mb-stack-lg">
+        <a
+          href="../students.html"
+          class="flex items-center gap-1 font-label-md text-label-md text-secondary hover:text-primary transition-colors w-fit">
+          <span class="material-symbols-outlined text-[18px]">arrow_back</span>
+          Student Resources
+        </a>
+      </nav>
 
-        <nav class="mb-stack-lg">
-            <a href="../students.html" class="flex items-center gap-1 font-label-md text-label-md text-secondary hover:text-primary transition-colors w-fit">
-                <span class="material-symbols-outlined text-[18px]">arrow_back</span>
-                Student Resources
-            </a>
-        </nav>
+      <header class="mb-stack-xl max-w-3xl">
+        <h1 class="font-headline-xl text-headline-xl text-primary mb-stack-sm">
+          Student Project Registration
+        </h1>
+        <p class="font-body-lg text-body-lg text-on-surface-variant">
+          All participants in the Annual Los Angeles County Science &amp; Engineering Fair must
+          complete online registration for both themselves and their projects — including students
+          who have already received pre-approval.
+        </p>
+      </header>
 
-        <header class="mb-stack-xl max-w-3xl">
-            <h1 class="font-headline-xl text-headline-xl text-primary mb-stack-sm">Student Project Registration</h1>
-            <p class="font-body-lg text-body-lg text-on-surface-variant">
-                All participants in the Annual Los Angeles County Science &amp; Engineering Fair must complete online registration for both themselves and their projects — including students who have already received pre-approval.
+      <div class="flex flex-col gap-stack-xl max-w-3xl">
+        <!-- Overview -->
+        <section class="bg-surface border border-outline-variant rounded-xl p-stack-lg">
+          <div class="flex items-center gap-2 mb-stack-md">
+            <span class="material-symbols-outlined text-primary-container">info</span>
+            <h2 class="font-headline-md text-headline-md text-primary">Overview</h2>
+          </div>
+          <div class="flex flex-col gap-stack-sm font-body-md text-body-md text-secondary">
+            <p>
+              The Fair President reviews each submitted project to determine admission eligibility.
+              Students receive email notifications regarding acceptance or rejection decisions —
+              make sure to provide a valid email address that can receive external messages.
             </p>
-        </header>
+            <p>
+              Accepted students will receive a
+              <strong class="text-primary">Final Information Packet</strong> via email several weeks
+              before the event.
+            </p>
+          </div>
+        </section>
 
-        <div class="flex flex-col gap-stack-xl max-w-3xl">
+        <!-- Pre-approval callout -->
+        <section class="bg-surface border-l-4 border-primary-container rounded-r-xl p-stack-lg">
+          <div class="flex items-center gap-2 mb-stack-md">
+            <span class="material-symbols-outlined text-primary-container">warning</span>
+            <h2 class="font-headline-md text-headline-md text-primary">
+              Projects Requiring Pre-Approval
+            </h2>
+          </div>
+          <p class="font-body-md text-body-md text-secondary mb-stack-md">
+            Certain project types require mandatory pre-approval from the Science Review Committee
+            <strong class="text-primary">before experimentation begins</strong>. Projects lacking
+            required approval will be rejected from participation.
+          </p>
+          <ul class="flex flex-col gap-2">
+            <li class="flex items-start gap-2 font-body-md text-body-md text-secondary">
+              <span
+                class="material-symbols-outlined text-primary-container text-[18px] mt-0.5 shrink-0"
+                >check_circle</span
+              >
+              Projects involving human subjects
+            </li>
+            <li class="flex items-start gap-2 font-body-md text-body-md text-secondary">
+              <span
+                class="material-symbols-outlined text-primary-container text-[18px] mt-0.5 shrink-0"
+                >check_circle</span
+              >
+              Projects using vertebrate animals or higher-functioning invertebrates
+            </li>
+            <li class="flex items-start gap-2 font-body-md text-body-md text-secondary">
+              <span
+                class="material-symbols-outlined text-primary-container text-[18px] mt-0.5 shrink-0"
+                >check_circle</span
+              >
+              Projects involving Potentially Hazardous Biological Agents (PHBA)
+            </li>
+            <li class="flex items-start gap-2 font-body-md text-body-md text-secondary">
+              <span
+                class="material-symbols-outlined text-primary-container text-[18px] mt-0.5 shrink-0"
+                >check_circle</span
+              >
+              Projects containing Hazardous Chemicals, Activities, or Devices (HCAD)
+            </li>
+          </ul>
+          <a
+            href="pre-approval-faq.html"
+            class="inline-flex items-center gap-1 mt-stack-md font-label-md text-label-md text-primary-container hover:underline">
+            Pre-Approval FAQ
+            <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+          </a>
+        </section>
 
-            <!-- Overview -->
-            <section class="bg-surface border border-outline-variant rounded-xl p-stack-lg">
-                <div class="flex items-center gap-2 mb-stack-md">
-                    <span class="material-symbols-outlined text-primary-container">info</span>
-                    <h2 class="font-headline-md text-headline-md text-primary">Overview</h2>
-                </div>
-                <div class="flex flex-col gap-stack-sm font-body-md text-body-md text-secondary">
-                    <p>The Fair President reviews each submitted project to determine admission eligibility. Students receive email notifications regarding acceptance or rejection decisions — make sure to provide a valid email address that can receive external messages.</p>
-                    <p>Accepted students will receive a <strong class="text-primary">Final Information Packet</strong> via email several weeks before the event.</p>
-                </div>
-            </section>
+        <!-- Registration Steps -->
+        <section class="bg-surface border border-outline-variant rounded-xl p-stack-lg">
+          <div class="flex items-center gap-2 mb-stack-md">
+            <span class="material-symbols-outlined text-primary-container">assignment</span>
+            <h2 class="font-headline-md text-headline-md text-primary">Registration Steps</h2>
+          </div>
+          <p class="font-body-md text-body-md text-secondary mb-stack-md">
+            Detailed instructions for completing your registration are in the step-by-step guide
+            below.
+          </p>
+          <a
+            href="https://docs.google.com/document/d/12lUY9wWhTtGTly0QUghEocIQQ9ResBkqzL0bKrAvoN8/edit"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center gap-2 bg-primary-container text-on-primary font-label-md text-label-md px-6 py-3 rounded hover:opacity-90 transition-opacity">
+            <span class="material-symbols-outlined text-[18px]">open_in_new</span>
+            Open Student Registration Process Guide
+          </a>
+        </section>
 
-            <!-- Pre-approval callout -->
-            <section class="bg-surface border-l-4 border-primary-container rounded-r-xl p-stack-lg">
-                <div class="flex items-center gap-2 mb-stack-md">
-                    <span class="material-symbols-outlined text-primary-container">warning</span>
-                    <h2 class="font-headline-md text-headline-md text-primary">Projects Requiring Pre-Approval</h2>
-                </div>
-                <p class="font-body-md text-body-md text-secondary mb-stack-md">Certain project types require mandatory pre-approval from the Science Review Committee <strong class="text-primary">before experimentation begins</strong>. Projects lacking required approval will be rejected from participation.</p>
-                <ul class="flex flex-col gap-2">
-                    <li class="flex items-start gap-2 font-body-md text-body-md text-secondary">
-                        <span class="material-symbols-outlined text-primary-container text-[18px] mt-0.5 shrink-0">check_circle</span>
-                        Projects involving human subjects
-                    </li>
-                    <li class="flex items-start gap-2 font-body-md text-body-md text-secondary">
-                        <span class="material-symbols-outlined text-primary-container text-[18px] mt-0.5 shrink-0">check_circle</span>
-                        Projects using vertebrate animals or higher-functioning invertebrates
-                    </li>
-                    <li class="flex items-start gap-2 font-body-md text-body-md text-secondary">
-                        <span class="material-symbols-outlined text-primary-container text-[18px] mt-0.5 shrink-0">check_circle</span>
-                        Projects involving Potentially Hazardous Biological Agents (PHBA)
-                    </li>
-                    <li class="flex items-start gap-2 font-body-md text-body-md text-secondary">
-                        <span class="material-symbols-outlined text-primary-container text-[18px] mt-0.5 shrink-0">check_circle</span>
-                        Projects containing Hazardous Chemicals, Activities, or Devices (HCAD)
-                    </li>
-                </ul>
-                <a href="pre-approval-faq.html" class="inline-flex items-center gap-1 mt-stack-md font-label-md text-label-md text-primary-container hover:underline">
-                    Pre-Approval FAQ <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
-                </a>
-            </section>
-
-            <!-- Registration Steps -->
-            <section class="bg-surface border border-outline-variant rounded-xl p-stack-lg">
-                <div class="flex items-center gap-2 mb-stack-md">
-                    <span class="material-symbols-outlined text-primary-container">assignment</span>
-                    <h2 class="font-headline-md text-headline-md text-primary">Registration Steps</h2>
-                </div>
-                <p class="font-body-md text-body-md text-secondary mb-stack-md">Detailed instructions for completing your registration are in the step-by-step guide below.</p>
-                <a href="https://docs.google.com/document/d/12lUY9wWhTtGTly0QUghEocIQQ9ResBkqzL0bKrAvoN8/edit"
-                    target="_blank" rel="noopener noreferrer"
-                    class="inline-flex items-center gap-2 bg-primary-container text-on-primary font-label-md text-label-md px-6 py-3 rounded hover:opacity-90 transition-opacity">
-                    <span class="material-symbols-outlined text-[18px]">open_in_new</span>
-                    Open Student Registration Process Guide
-                </a>
-            </section>
-
-            <!-- Team Projects -->
-            <section class="bg-surface border border-outline-variant rounded-xl p-stack-lg">
-                <div class="flex items-center gap-2 mb-stack-md">
-                    <span class="material-symbols-outlined text-primary-container">group</span>
-                    <h2 class="font-headline-md text-headline-md text-primary">Team Project Guidelines</h2>
-                </div>
-                <ul class="flex flex-col gap-stack-sm">
-                    <li class="flex items-start gap-2 font-body-md text-body-md text-secondary">
-                        <span class="material-symbols-outlined text-secondary text-[18px] mt-0.5 shrink-0">arrow_right</span>
-                        Team size: <strong class="text-primary">2–3 members</strong>
-                    </li>
-                    <li class="flex items-start gap-2 font-body-md text-body-md text-secondary">
-                        <span class="material-symbols-outlined text-secondary text-[18px] mt-0.5 shrink-0">arrow_right</span>
-                        All team members must attend the <strong class="text-primary">same school</strong>
-                    </li>
-                    <li class="flex items-start gap-2 font-body-md text-body-md text-secondary">
-                        <span class="material-symbols-outlined text-secondary text-[18px] mt-0.5 shrink-0">arrow_right</span>
-                        A designated <strong class="text-primary">Team Leader</strong> handles online registration
-                    </li>
-                    <li class="flex items-start gap-2 font-body-md text-body-md text-secondary">
-                        <span class="material-symbols-outlined text-secondary text-[18px] mt-0.5 shrink-0">arrow_right</span>
-                        A <strong class="text-primary">Site Coordinator</strong> must oversee all student work
-                    </li>
-                </ul>
-            </section>
-
-        </div>
+        <!-- Team Projects -->
+        <section class="bg-surface border border-outline-variant rounded-xl p-stack-lg">
+          <div class="flex items-center gap-2 mb-stack-md">
+            <span class="material-symbols-outlined text-primary-container">group</span>
+            <h2 class="font-headline-md text-headline-md text-primary">Team Project Guidelines</h2>
+          </div>
+          <ul class="flex flex-col gap-stack-sm">
+            <li class="flex items-start gap-2 font-body-md text-body-md text-secondary">
+              <span class="material-symbols-outlined text-secondary text-[18px] mt-0.5 shrink-0"
+                >arrow_right</span
+              >
+              Team size: <strong class="text-primary">2–3 members</strong>
+            </li>
+            <li class="flex items-start gap-2 font-body-md text-body-md text-secondary">
+              <span class="material-symbols-outlined text-secondary text-[18px] mt-0.5 shrink-0"
+                >arrow_right</span
+              >
+              All team members must attend the <strong class="text-primary">same school</strong>
+            </li>
+            <li class="flex items-start gap-2 font-body-md text-body-md text-secondary">
+              <span class="material-symbols-outlined text-secondary text-[18px] mt-0.5 shrink-0"
+                >arrow_right</span
+              >
+              A designated <strong class="text-primary">Team Leader</strong> handles online
+              registration
+            </li>
+            <li class="flex items-start gap-2 font-body-md text-body-md text-secondary">
+              <span class="material-symbols-outlined text-secondary text-[18px] mt-0.5 shrink-0"
+                >arrow_right</span
+              >
+              A <strong class="text-primary">Site Coordinator</strong> must oversee all student work
+            </li>
+          </ul>
+        </section>
+      </div>
     </main>
 
     <div id="site-footer"></div>
-</body>
+  </body>
 </html>
