@@ -174,7 +174,7 @@ function renderFeatured(article, container) {
         <a href="${articleHref(article.id)}" class="group relative bg-surface border border-outline-variant rounded-xl overflow-hidden flex flex-col md:flex-row hover:border-primary transition-colors duration-300">
             <div class="w-full md:w-2/5 h-64 md:h-auto relative bg-surface-container-low">
                 <div class="absolute inset-0 bg-gradient-to-br from-primary-container to-tertiary-container opacity-90 mix-blend-multiply"></div>
-                ${article.image ? `<img alt="${escapeHtml(article.title)}" class="w-full h-full object-cover" src="${article.image}"/>` : ""}
+                ${article.image ? `<img alt="${escapeHtml(article.title)}" class="w-full h-full object-cover" loading="lazy" src="${article.image}"/>` : ""}
                 <div class="absolute top-4 left-4">
                     <span class="inline-block ${style.bg} ${style.text} px-2 py-1 rounded text-label-md font-label-md uppercase tracking-wide shadow-sm">${escapeHtml(article.category)}</span>
                 </div>
