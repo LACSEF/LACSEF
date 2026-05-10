@@ -1,0 +1,151 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---------- Custom styles ---------- */
+
+.material-symbols-outlined {
+  font-variation-settings:
+    "FILL" 0,
+    "wght" 400,
+    "GRAD" 0,
+    "opsz" 24;
+}
+
+@keyframes ticker-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.ticker-track {
+  display: flex;
+  width: max-content;
+  animation: ticker-scroll 30s linear infinite;
+}
+
+.ticker-track:hover {
+  animation-play-state: paused;
+}
+
+.material-symbols-outlined.filled,
+.fill-icon {
+  font-variation-settings: "FILL" 1;
+}
+
+/* ---------- Mobile (<768px) overrides ---------- */
+@media (max-width: 767px) {
+  /* Headlines: scale down so they don't overflow narrow viewports */
+  .text-headline-xl {
+    font-size: 28px !important;
+    line-height: 1.2 !important;
+  }
+  .text-headline-lg {
+    font-size: 24px !important;
+    line-height: 1.25 !important;
+  }
+  .text-headline-md {
+    font-size: 20px !important;
+  }
+  .text-body-lg {
+    font-size: 16px !important;
+  }
+
+  /* Section vertical rhythm: stack-xl (64px) is heavy on phones */
+  .py-stack-xl {
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+  }
+  .py-stack-lg {
+    padding-top: 24px !important;
+    padding-bottom: 24px !important;
+  }
+  .gap-stack-xl {
+    gap: 40px !important;
+  }
+
+  /* Hero carousel: 480px is too tall on phones; arrows overlap text */
+  #hero-carousel .relative.w-full {
+    height: 380px !important;
+  }
+  #hero-prev,
+  #hero-next {
+    width: 36px !important;
+    height: 36px !important;
+  }
+  #hero-prev {
+    left: 8px !important;
+  }
+  #hero-next {
+    right: 8px !important;
+  }
+  /* Hero copy: prevent the 56px override from sneaking back in via md: */
+  #hero-carousel .hero-slide h1 {
+    font-size: 26px !important;
+    line-height: 1.2 !important;
+  }
+  #hero-carousel .hero-slide p {
+    font-size: 15px !important;
+  }
+
+  /* Latest News ticker: hide the "Latest News" wordmark, keep the icon */
+  #news-ticker {
+    /* nothing — handled by parent label below */
+  }
+  .ticker-label-text {
+    display: none;
+  }
+
+  /* Header: shrink the brand text so Donate + hamburger fit */
+  header a.text-headline-md {
+    font-size: 16px !important;
+  }
+  header .donate-button {
+    padding-left: 14px !important;
+    padding-right: 14px !important;
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+    font-size: 13px !important;
+  }
+
+  /* CTA buttons: long pills wrap awkwardly on phones */
+  .px-8.py-4 {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+  }
+
+  /* Stats grid: divider lines look broken on 2-col mobile layout */
+  .divide-x.divide-outline-variant > * {
+    border-left-width: 0 !important;
+  }
+
+  /* Tables / wide content: allow horizontal scroll instead of overflow */
+  main table {
+    display: block;
+    overflow-x: auto;
+    max-width: 100%;
+  }
+
+  /* Footer: center copy and stack with comfortable spacing */
+  footer .max-w-container-max {
+    text-align: center;
+  }
+}
+
+/* Very small phones (<400px) */
+@media (max-width: 399px) {
+  .text-headline-xl {
+    font-size: 24px !important;
+  }
+  header a.text-headline-md {
+    font-size: 15px !important;
+  }
+  #hero-carousel .relative.w-full {
+    height: 340px !important;
+  }
+}

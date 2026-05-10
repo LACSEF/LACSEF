@@ -1,1 +1,14 @@
+# If any CSS-affecting file is staged (HTML, JS, src/main.css, tailwind.config.js),
+# rebuild Tailwind and re-stage the output so css/styles.css can never go stale.
+if git diff --cached --name-only --diff-filter=ACMR \
+  | grep -qE '\.(html|js)$|^src/main\.css$|^tailwind\.config\.js$'; then
+  echo "→ rebuilding Tailwind (css/styles.css)"
+  npm run --silent build:css || {
+    echo "✖ CSS build failed; aborting commit."
+    exit 1
+  }
+  git add css/styles.css
+fi
+
 npx lint-staged
+

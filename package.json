@@ -2,18 +2,26 @@
   "name": "lacsef-website",
   "private": true,
   "scripts": {
-    "start": "serve .",
+    "start": "npm run build:css && serve .",
+    "dev": "npm run watch:css",
+    "build:css": "tailwindcss -i src/main.css -o css/styles.css --minify",
+    "watch:css": "tailwindcss -i src/main.css -o css/styles.css --watch",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "prepare": "husky"
   },
   "devDependencies": {
+    "@tailwindcss/container-queries": "^0.1.1",
+    "@tailwindcss/forms": "^0.5.9",
+    "@tailwindcss/typography": "^0.5.15",
     "husky": "^9.1.7",
     "lint-staged": "^15.2.10",
     "prettier": "^3.3.3",
-    "serve": "^14.2.4"
+    "serve": "^14.2.4",
+    "tailwindcss": "^3.4.13"
   },
   "lint-staged": {
-    "*.{html,css,js,json,md}": "prettier --write"
+    "*.{html,js,json,md}": "prettier --write",
+    "src/**/*.css": "prettier --write"
   }
 }

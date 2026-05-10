@@ -1,0 +1,34 @@
+name: CSS up to date
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  check-css:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Rebuild Tailwind CSS
+        run: npm run build:css
+
+      - name: Verify css/styles.css matches sources
+        run: |
+          if ! git diff --exit-code -- css/styles.css; then
+            echo ""
+            echo "::error file=css/styles.css::css/styles.css is out of date with the current sources."
+            echo "Locally, run 'npm run build:css' and commit the result."
+            echo "(The pre-commit hook should do this for you — make sure 'npm install' has been run in your clone and that you didn't pass --no-verify.)"
+            exit 1
+          fi

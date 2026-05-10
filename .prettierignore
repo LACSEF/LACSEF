@@ -2,3 +2,4 @@ node_modules/
 downloads/
 .git/
 package-lock.json
+css/styles.css
