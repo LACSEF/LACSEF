@@ -30,13 +30,13 @@ Do not call bare `python`, `python3`, `pip`, or `pipx`. If `uv` isn't available,
 
 ## Local dev
 
-- `npm start` runs `npm run build` (CSS + articles + sitemap) once, then `serve` on the static files. Don't open files via `file://` — `fetch()` for header/footer/JSON will fail.
-- `npm run dev` runs Tailwind in `--watch` mode for iterating on classes. Pair it with `npm start` in a second terminal. (Articles aren't watched — re-run `npm run build:articles` manually if you're editing Markdown.)
+- `bun start` runs `bun run build` (CSS + articles + sitemap) once, then `serve` on the static files. Don't open files via `file://` — `fetch()` for header/footer/JSON will fail.
+- `bun run dev` runs Tailwind in `--watch` mode for iterating on classes. Pair it with `bun start` in a second terminal. (Articles aren't watched — re-run `bun run build:articles` manually if you're editing Markdown.)
 - Python alternative (if asked): `uv run python -m http.server 8000`.
 
 ## Build & deploy (important)
 
-Three files in this repo are **build artifacts**, regenerated from sources by `npm run build`. They are **not committed** — they're in `.gitignore`:
+Three files in this repo are **build artifacts**, regenerated from sources by `bun run build`. They are **not committed** — they're in `.gitignore`:
 
 - `css/styles.css` ← `src/main.css` + `tailwind.config.js` + Tailwind class scan
 - `news/posts/<id>.html` (one per article) ← `news/articles.json` + the matching Markdown body, rendered through [scripts/build-articles.mjs](scripts/build-articles.mjs)
@@ -44,16 +44,16 @@ Three files in this repo are **build artifacts**, regenerated from sources by `n
 
 How deploys work:
 
-- [.github/workflows/deploy.yml](.github/workflows/deploy.yml) runs on every push to `main`. It does a clean checkout, `npm ci`, `npm run build`, stages the static site to a temporary `_site/` directory (excluding `src/`, `scripts/`, `node_modules/`, `*.md`, the build config files, etc.), uploads it as a Pages artifact, and deploys via [actions/deploy-pages](https://github.com/actions/deploy-pages).
+- [.github/workflows/deploy.yml](.github/workflows/deploy.yml) runs on every push to `main`. It does a clean checkout, `bun install --frozen-lockfile`, `bun run build`, stages the static site to a temporary `_site/` directory (excluding `src/`, `scripts/`, `node_modules/`, `*.md`, the build config files, etc.), uploads it as a Pages artifact, and deploys via [actions/deploy-pages](https://github.com/actions/deploy-pages).
 - Because each deploy is a fresh build from sources, adds / edits / renames / deletions in `news/articles.json` + the Markdown bodies all propagate to the live site without anyone running a build manually. This is the whole point — non-technical contributors can push via the GitHub web UI.
 - One-time repo setting: **Settings → Pages → Source: GitHub Actions**. If the repo is currently set to "Deploy from a branch", flip it. (If you find the deploy workflow runs but the site doesn't update, this is almost certainly why.)
-- [.github/workflows/build-check.yml](.github/workflows/build-check.yml) runs on PRs and just verifies `npm run build` succeeds, so build errors are caught before merge.
+- [.github/workflows/build-check.yml](.github/workflows/build-check.yml) runs on PRs and just verifies `bun run build` succeeds, so build errors are caught before merge.
 
 Rules:
 
-- **Never edit a build output by hand.** They're gitignored, but if a stale local copy exists from a prior `npm run build`, it'll be wiped on the next build. Edit the source instead (`src/main.css`, the relevant Markdown, or the build script).
-- **The pre-commit hook runs `npm run build` locally** (without staging anything) when sources affecting outputs are staged, purely as fast-feedback so build errors surface at commit time instead of at deploy time. If you bypass with `--no-verify` and a build error sneaks through, the deploy workflow will fail loudly — not silently serve a stale site.
-- For iterating on classes without committing every time, run `npm run dev` (Tailwind in watch mode) so the browser sees changes on save.
+- **Never edit a build output by hand.** They're gitignored, but if a stale local copy exists from a prior `bun run build`, it'll be wiped on the next build. Edit the source instead (`src/main.css`, the relevant Markdown, or the build script).
+- **The pre-commit hook runs `bun run build` locally** (without staging anything) when sources affecting outputs are staged, purely as fast-feedback so build errors surface at commit time instead of at deploy time. If you bypass with `--no-verify` and a build error sneaks through, the deploy workflow will fail loudly — not silently serve a stale site.
+- For iterating on classes without committing every time, run `bun run dev` (Tailwind in watch mode) so the browser sees changes on save.
 - All build outputs (`css/styles.css`, `news/posts/*.html`, `sitemap.xml`) are in `.prettierignore` — no point formatting compiled output.
 
 ## House rules when editing
@@ -65,7 +65,7 @@ Rules:
 - Design tokens: changing a color in `tailwind.config.js` means updating [DESIGN.md](DESIGN.md) too. (No need to commit any rebuilt CSS — the deploy workflow does that.)
 - New HTML or JS files outside the existing `content` globs in `tailwind.config.js` won't get their classes compiled. Either keep new files inside the existing patterns (`./*.html`, `./components/**/*.html`, `./students/**/*.html`, `./js/**/*.js`, `./scripts/**/*.{js,mjs}`) or update the globs.
 - Adding a new top-level HTML page also means adding it to the `STATIC_PAGES` list at the top of [scripts/build-articles.mjs](scripts/build-articles.mjs) so the sitemap picks it up.
-- Don't touch `node_modules/`, `package-lock.json`, or `downloads/` files unless the task is specifically about them.
+- Don't touch `node_modules/`, `package-lock.json`, `bun.lock`, or `downloads/` files unless the task is specifically about them.
 
 ## Formatting & commits
 

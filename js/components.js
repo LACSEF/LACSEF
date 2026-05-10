@@ -29,6 +29,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
   let currentPage = location.pathname.split("/").pop() || "index.html";
+  if (currentPage && !currentPage.includes(".")) currentPage += ".html";
   if (currentPage === "article.html") currentPage = "news.html";
   document.querySelectorAll("header nav a[data-page]").forEach((a) => {
     if (a.dataset.page === currentPage) {

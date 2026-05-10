@@ -2,7 +2,7 @@
 # locally to catch errors before push. Build outputs themselves aren't tracked
 # in git — they're regenerated on every deploy by .github/workflows/deploy.yml,
 # so the only purpose of running here is fast feedback (and to keep the local
-# preview in sync if `npm start` is running).
+# preview in sync if `bun start` is running).
 # Triggers:
 #   - HTML pages (Tailwind class scan)
 #   - JS / MJS (Tailwind scan + scripts/build-articles.mjs is itself a source)
@@ -12,11 +12,11 @@
 if git diff --cached --name-only --diff-filter=ACMR \
   | grep -qE '\.(html|js|mjs)$|^src/main\.css$|^tailwind\.config\.js$|^news/articles\.json$|^news/posts/.*\.md$|^scripts/'; then
   echo "→ verifying build (sources affecting build outputs are staged)"
-  npm run --silent build > /dev/null || {
+  bun run build > /dev/null || {
     echo "✖ Build failed; aborting commit. Fix the error above and try again."
     exit 1
   }
 fi
 
-npx lint-staged
+bunx lint-staged
 

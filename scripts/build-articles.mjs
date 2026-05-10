@@ -2,7 +2,7 @@
 // Generate static news/posts/<id>.html files from news/articles.json + markdown
 // bodies, plus a fresh sitemap.xml that includes the static pages and articles.
 //
-// Run via `npm run build:articles` (also wrapped by `npm run build`).
+// Run via `bun run build:articles` (also wrapped by `bun run build`).
 // The pre-commit hook re-runs this when relevant sources are staged.
 
 import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
