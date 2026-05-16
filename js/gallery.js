@@ -174,8 +174,11 @@ function closeLightbox() {
 
 function showLightboxPhoto(photos) {
   const p = photos[lightboxIndex];
-  document.getElementById("lb-img").src = p.src;
-  document.getElementById("lb-img").alt = p.alt;
+  const img = document.getElementById("lb-img");
+  img.classList.add("opacity-0");
+  img.addEventListener("load", () => img.classList.remove("opacity-0"), { once: true });
+  img.src = p.src;
+  img.alt = p.alt;
   document.getElementById("lb-caption").textContent = p.caption;
   document.getElementById("lb-counter").textContent = `${lightboxIndex + 1} / ${photos.length}`;
   document.getElementById("lb-prev").disabled = lightboxIndex === 0;
