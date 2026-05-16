@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Broadcom Foundation",
+    "image": "images/sponsors/broadcom.jpg",
+    "level": "Silver"
+  },
+  {
+    "name": "Edison International",
+    "image": "images/sponsors/edison.png",
+    "level": "Silver"
+  },
+  {
+    "name": "PECG",
+    "image": "images/sponsors/pecg.png",
+    "level": "Silver"
+  },
+  {
+    "name": "Saban",
+    "image": "images/sponsors/saban.jpg",
+    "level": "Silver"
+  },
+  {
+    "name": "Kathy B.",
+    "image": "images/sponsors/kathyb.jpg",
+    "level": "Bronze"
+  },
+  {
+    "name": "Bronze Sponsor",
+    "image": "images/sponsors/bronze-2.jpeg",
+    "level": "Bronze"
+  },
+  {
+    "name": "Water Replenishment District of Southern California",
+    "image": "images/sponsors/wrd.png",
+    "level": "Partner"
+  },
+  {
+    "name": "GASEF",
+    "image": "images/sponsors/gasef.jpg",
+    "level": "Contributor"
+  },
+  {
+    "name": "Des Hotel",
+    "image": "images/sponsors/des-hotel.png",
+    "level": "Contributor"
+  },
+  {
+    "name": "Irmgard",
+    "image": "images/sponsors/irmgard.jpg",
+    "level": "Contributor"
+  }
+]

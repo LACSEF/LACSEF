@@ -46,6 +46,7 @@
     <script src="js/components.js"></script>
     <script src="js/news-feed.js"></script>
     <script src="js/schedule.js"></script>
+    <script src="js/sponsors.js"></script>
   </head>
 
   <body class="bg-background text-on-background min-h-screen flex flex-col font-body-md">
@@ -97,30 +98,103 @@
           </div>
         </div>
       </section>
-      <!-- Timeline Section -->
+      <!-- Registration CTA -->
       <section class="w-full bg-background py-stack-xl">
         <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
-          <div
-            class="flex flex-col md:flex-row justify-between items-start md:items-end mb-stack-lg">
-            <div>
-              <h2 class="font-headline-lg text-headline-lg text-primary mb-2">
-                2027 Fair Timeline
-              </h2>
-              <p class="font-body-md text-body-md text-on-surface-variant">
-                Important deadlines for students and educators.
-              </p>
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-gutter items-start">
+            <!-- Left: headline + CTAs -->
+            <div class="flex flex-col gap-stack-lg">
+              <div>
+                <span
+                  class="inline-flex items-center gap-1.5 bg-primary-container/10 text-primary-container font-label-md text-label-md px-3 py-1 rounded-full mb-stack-md">
+                  <span class="w-2 h-2 rounded-full bg-primary-container"></span>
+                  Early Bird Registration Open
+                </span>
+                <h2 class="font-headline-xl text-headline-xl text-primary mb-stack-sm">
+                  Register for the 2027 Fair
+                </h2>
+                <p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg">
+                  Join over 1,150 students from 150+ schools competing across 38 scientific
+                  categories at the Shrine Expo Hall, Los Angeles.
+                </p>
+              </div>
+              <div class="flex flex-col sm:flex-row gap-stack-sm">
+                <a
+                  href="students/student-project-registration.html"
+                  class="inline-flex items-center justify-center gap-2 bg-primary-container text-on-primary font-label-md text-label-md px-8 py-4 rounded hover:opacity-90 transition-opacity">
+                  Register Now
+                  <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+                </a>
+                <a
+                  href="schedule.html"
+                  class="inline-flex items-center justify-center gap-2 border border-outline-variant text-primary font-label-md text-label-md px-8 py-4 rounded hover:bg-surface-variant transition-colors">
+                  View Full Schedule
+                </a>
+              </div>
+              <a
+                href="students/how-to-participate.html"
+                class="font-label-md text-label-md text-secondary flex items-center gap-1 hover:text-primary transition-colors w-fit">
+                <span class="material-symbols-outlined text-[16px]">help_outline</span>
+                First time? Learn how to participate
+              </a>
             </div>
-            <a
-              class="font-label-md text-label-md text-primary-container flex items-center gap-1 hover:underline mt-4 md:mt-0"
-              href="schedule.html">
-              View Full Schedule
-              <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
-            </a>
+            <!-- Right: current phase + key dates -->
+            <div class="flex flex-col gap-gutter">
+              <div
+                class="bg-surface border-2 border-primary-container rounded-xl p-stack-lg shadow-[0px_4px_20px_rgba(0,51,102,0.06)]">
+                <div class="flex items-center justify-between mb-stack-md">
+                  <span
+                    class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider"
+                    >Current Phase</span
+                  >
+                  <span
+                    class="bg-primary-container text-on-primary font-label-md text-[11px] uppercase px-2 py-0.5 rounded"
+                    >Open Now</span
+                  >
+                </div>
+                <h3 class="font-headline-lg text-headline-lg text-primary mb-1">Early Bird</h3>
+                <p class="font-body-md text-body-md text-primary-container mb-stack-sm">
+                  Oct 15 &ndash; Nov 30, 2026
+                </p>
+                <p class="font-body-md text-body-md text-on-surface-variant">
+                  $35 per student &mdash; priority abstract review included.
+                </p>
+              </div>
+              <div
+                class="bg-surface border border-outline-variant rounded-xl p-stack-lg flex flex-col gap-stack-sm">
+                <span
+                  class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider"
+                  >Key Dates</span
+                >
+                <div
+                  class="flex items-start gap-stack-md pt-stack-sm border-t border-outline-variant">
+                  <span class="font-label-md text-label-md text-secondary w-28 shrink-0 pt-0.5"
+                    >Jan 20, 2027</span
+                  >
+                  <span class="font-body-md text-body-md text-on-surface"
+                    >Final Project Submission</span
+                  >
+                </div>
+                <div
+                  class="flex items-start gap-stack-md pt-stack-sm border-t border-outline-variant">
+                  <span class="font-label-md text-label-md text-secondary w-28 shrink-0 pt-0.5"
+                    >Mar 8, 2027</span
+                  >
+                  <div>
+                    <span class="font-body-md text-body-md text-on-surface block">Fair Day</span>
+                    <span class="font-label-md text-label-md text-secondary">Shrine Expo Hall</span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div id="home-timeline" class="relative pl-8 md:pl-0"></div>
         </div>
       </section>
     </main>
+    <!-- Sponsor Spotlight -->
+    <section
+      id="sponsor-spotlight"
+      class="w-full bg-surface border-t border-outline-variant"></section>
     <div id="site-footer"></div>
   </body>
 </html>
