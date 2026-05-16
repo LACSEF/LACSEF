@@ -43,6 +43,7 @@ const STATIC_PAGES = [
   },
   { path: "/judges.html", changefreq: "monthly", priority: "0.8" },
   { path: "/sponsors.html", changefreq: "monthly", priority: "0.7" },
+  { path: "/gallery.html", changefreq: "monthly", priority: "0.7" },
   { path: "/category-descriptions.html", changefreq: "yearly", priority: "0.5" },
 ];
 
