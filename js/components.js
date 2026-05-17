@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   let currentPage = location.pathname.split("/").pop() || "index.html";
   if (currentPage && !currentPage.includes(".")) currentPage += ".html";
-  if (currentPage === "article.html") currentPage = "news.html";
+  if (currentPage === "post_template.html") currentPage = "news.html";
   document.querySelectorAll("header nav a[data-page]").forEach((a) => {
     if (a.dataset.page === currentPage) {
       a.classList.add("font-bold", "border-b-2", "border-on-primary", "pb-1");

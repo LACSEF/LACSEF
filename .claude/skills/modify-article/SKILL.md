@@ -8,7 +8,7 @@ version: 1.0.0
 
 Edits or replaces content in an existing LACSEF news article. Handles two scopes:
 
-1. **Metadata change** — update fields in `news/articles.json` (title, category, date, excerpt, image, featured).
+1. **Metadata change** — update fields in `data/posts.json` (title, category, date, excerpt, image, featured).
 2. **Body change** — edit or fully replace the Markdown file at `news/posts/<YYYY-MM>/<slug>/<slug>.md`.
 
 Both scopes can apply in the same operation.
@@ -17,7 +17,7 @@ Both scopes can apply in the same operation.
 
 ## Locating the article
 
-First, identify which article the user means. If they gave a slug/ID (e.g. `isef-results-2026`), use it directly. Otherwise search `news/articles.json` by title keyword — read the file and find the closest match. If there's ambiguity, list the candidates and ask.
+First, identify which article the user means. If they gave a slug/ID (e.g. `isef-results-2026`), use it directly. Otherwise search `data/posts.json` by title keyword — read the file and find the closest match. If there's ambiguity, list the candidates and ask.
 
 Once found, note:
 
@@ -37,9 +37,9 @@ Identify what needs changing. Common cases:
 
 | What user asks                      | Where the change goes           |
 | ----------------------------------- | ------------------------------- |
-| Edit title, category, date, excerpt | `articles.json` metadata only   |
-| Add / change / remove image URL     | `articles.json` metadata only   |
-| Set or unset featured               | `articles.json` metadata only   |
+| Edit title, category, date, excerpt | `posts.json` metadata only      |
+| Add / change / remove image URL     | `posts.json` metadata only      |
+| Set or unset featured               | `posts.json` metadata only      |
 | Rewrite or fix article body         | Markdown file only              |
 | Replace with a new .md file         | Markdown file only              |
 | Replace with a .zip                 | Markdown file + possibly images |
@@ -47,9 +47,9 @@ Identify what needs changing. Common cases:
 
 If it's unclear which part they want changed, ask before editing.
 
-### 2. Metadata changes (articles.json)
+### 2. Metadata changes (posts.json)
 
-Read `news/articles.json`. Find the entry by `id`. Apply the requested field changes.
+Read `data/posts.json`. Find the entry by `id`. Apply the requested field changes.
 
 Valid categories (exact strings only):
 
@@ -91,7 +91,7 @@ If the user changes the title significantly and wants the URL to reflect it, you
 
 1. Rename the directory: `mv news/posts/<old-path>/ news/posts/<new-YYYY-MM>/<new-slug>/`
 2. Rename the file: `mv ... <new-slug>.md`
-3. Update `articles.json`: change `id` and `file` to match, update `date` if the month changed
+3. Update `posts.json`: change `id` and `file` to match, update `date` if the month changed
 
 Only do this if the user explicitly asks — don't rename slugs automatically for title edits, as it breaks existing links.
 
@@ -109,7 +109,7 @@ If it fails, read the error and fix the cause before reporting done.
 
 Summarize what changed:
 
-- Which fields were updated in `articles.json` (show old → new for each)
+- Which fields were updated in `posts.json` (show old → new for each)
 - Whether the Markdown body was edited or replaced
 - The article URL for preview: `news/posts/<id>.html` (accessible via `bun start`)
 

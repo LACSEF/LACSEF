@@ -3,7 +3,7 @@
 Static HTML site for the LA County Science & Engineering Fair, deployed to GitHub Pages by a GH Actions workflow on every push to `main`. No backend, no framework. Two small build steps:
 
 1. **CSS** — Tailwind compiles `src/main.css` → `css/styles.css`.
-2. **Articles + sitemap** — `scripts/build-articles.mjs` reads `news/articles.json` + each post's Markdown body and emits `news/posts/<id>.html` plus a fresh `sitemap.xml`.
+2. **Articles + sitemap** — `scripts/build-articles.mjs` reads `data/posts.json` + each post's Markdown body and emits `news/posts/<id>.html` plus a fresh `sitemap.xml`.
 
 **Build outputs are not committed** — they're in `.gitignore` and regenerated from sources by [.github/workflows/deploy.yml](.github/workflows/deploy.yml) on every deploy. This is what lets non-technical contributors push a Markdown file via the GitHub web UI and have it appear on the live site without running anything locally — the deploy workflow does a clean build from sources, so adds / edits / renames / deletions all propagate automatically.
 
@@ -25,7 +25,7 @@ Do not call bare `python`, `python3`, `pip`, or `pipx`. If `uv` isn't available,
 - Tailwind compiled — theme tokens live in [tailwind.config.js](tailwind.config.js); CSS source (with `@tailwind` directives + custom rules) is [src/main.css](src/main.css); the build emits `css/styles.css` (gitignored, regenerated on every deploy).
 - Header/footer are shared snippets in [components/](components/), injected at runtime by [js/components.js](js/components.js). The injection rewrites relative `<a href>` values against the site root, so nav links work from any depth (root, `students/`, `news/posts/`).
 - Schedule data: [data/schedule.json](data/schedule.json) drives both the home timeline and the schedule page.
-- News: metadata in [news/articles.json](news/articles.json), bodies as Markdown under `news/posts/<YYYY-MM>/<slug>/`. The build script renders each entry into a static `news/posts/<id>.html` page (canonical article URL, gitignored); legacy `article.html?id=<id>` links redirect to it.
+- News: metadata in [data/posts.json](data/posts.json), bodies as Markdown under `news/posts/<YYYY-MM>/<slug>/`. The build script renders each entry into a static `news/posts/<id>.html` page (canonical article URL, gitignored); legacy `post_template.html?id=<id>` links redirect to it.
 - Design system reference: [DESIGN.md](DESIGN.md). Keep it in sync with `tailwind.config.js`.
 
 ## Local dev
@@ -39,13 +39,13 @@ Do not call bare `python`, `python3`, `pip`, or `pipx`. If `uv` isn't available,
 Three files in this repo are **build artifacts**, regenerated from sources by `bun run build`. They are **not committed** — they're in `.gitignore`:
 
 - `css/styles.css` ← `src/main.css` + `tailwind.config.js` + Tailwind class scan
-- `news/posts/<id>.html` (one per article) ← `news/articles.json` + the matching Markdown body, rendered through [scripts/build-articles.mjs](scripts/build-articles.mjs)
+- `news/posts/<id>.html` (one per article) ← `data/posts.json` + the matching Markdown body, rendered through [scripts/build-articles.mjs](scripts/build-articles.mjs)
 - `sitemap.xml` ← regenerated alongside articles (the static-page list is hardcoded in `scripts/build-articles.mjs`; update it when adding a new top-level page)
 
 How deploys work:
 
 - [.github/workflows/deploy.yml](.github/workflows/deploy.yml) runs on every push to `main`. It does a clean checkout, `bun install --frozen-lockfile`, `bun run build`, stages the static site to a temporary `_site/` directory (excluding `src/`, `scripts/`, `node_modules/`, `*.md`, the build config files, etc.), uploads it as a Pages artifact, and deploys via [actions/deploy-pages](https://github.com/actions/deploy-pages).
-- Because each deploy is a fresh build from sources, adds / edits / renames / deletions in `news/articles.json` + the Markdown bodies all propagate to the live site without anyone running a build manually. This is the whole point — non-technical contributors can push via the GitHub web UI.
+- Because each deploy is a fresh build from sources, adds / edits / renames / deletions in `data/posts.json` + the Markdown bodies all propagate to the live site without anyone running a build manually. This is the whole point — non-technical contributors can push via the GitHub web UI.
 - One-time repo setting: **Settings → Pages → Source: GitHub Actions**. If the repo is currently set to "Deploy from a branch", flip it. (If you find the deploy workflow runs but the site doesn't update, this is almost certainly why.)
 - [.github/workflows/build-check.yml](.github/workflows/build-check.yml) runs on PRs and just verifies `bun run build` succeeds, so build errors are caught before merge.
 

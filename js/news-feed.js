@@ -43,7 +43,7 @@ const escapeHtml = (s) =>
 const articleHref = (id) => `news/posts/${encodeURIComponent(id)}.html`;
 
 async function loadArticles() {
-  const res = await fetch("news/articles.json");
+  const res = await fetch("data/posts.json");
   const articles = await res.json();
   articles.sort((a, b) => b.date.localeCompare(a.date));
   return articles;

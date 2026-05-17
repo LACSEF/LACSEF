@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Generate static news/posts/<id>.html files from news/articles.json + markdown
+// Generate static news/posts/<id>.html files from data/posts.json + markdown
 // bodies, plus a fresh sitemap.xml that includes the static pages and articles.
 //
 // Run via `bun run build:articles` (also wrapped by `bun run build`).
@@ -199,7 +199,7 @@ function buildSitemap(articles) {
 
 // --- Main ---------------------------------------------------------------
 
-const articles = JSON.parse(readFileSync(join(ROOT, "news/articles.json"), "utf8"));
+const articles = JSON.parse(readFileSync(join(ROOT, "data/posts.json"), "utf8"));
 
 mkdirSync(join(ROOT, "news/posts"), { recursive: true });
 

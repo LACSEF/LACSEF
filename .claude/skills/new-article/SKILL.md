@@ -20,7 +20,7 @@ Articles have two parts:
 **Markdown body** — stored at `news/posts/<YYYY-MM>/<slug>/<slug>.md`
 (e.g. `news/posts/2026-05/isef-results-2026/isef-results-2026.md`)
 
-**Metadata entry** in `news/articles.json` (prepend to the array — newest first):
+**Metadata entry** in `data/posts.json` (prepend to the array — newest first):
 
 ```json
 {
@@ -107,9 +107,9 @@ cp /tmp/article-import/*.{jpg,jpeg,png,gif,webp,svg} news/posts/<YYYY-MM>/<slug>
 
 Reference images in the Markdown with relative paths (e.g. `![Alt text](image.jpg)`) — the build script resolves these correctly.
 
-### 4. Register in articles.json
+### 4. Register in posts.json
 
-Read `news/articles.json`. Prepend the new entry (newest first) and write it back. The `file` field value is `<YYYY-MM>/<slug>/<slug>` — no leading slash, no `.md` extension.
+Read `data/posts.json`. Prepend the new entry (newest first) and write it back. The `file` field value is `<YYYY-MM>/<slug>/<slug>` — no leading slash, no `.md` extension.
 
 Use the Edit tool for targeted JSON updates rather than rewriting the whole file where possible. If rewriting, preserve all existing entries exactly.
 
@@ -121,7 +121,7 @@ Run the article build to confirm the new post renders without errors:
 bun run build:articles
 ```
 
-If it fails, read the error and fix the cause (usually a missing Markdown file or a malformed `articles.json` entry).
+If it fails, read the error and fix the cause (usually a missing Markdown file or a malformed `posts.json` entry).
 
 ### 6. Report back
 
@@ -136,7 +136,7 @@ Tell the user:
 
 ## Edge cases
 
-- **Duplicate slug**: if a slug derived from the title already exists in `articles.json`, append `-2` (or the year if that's meaningful).
+- **Duplicate slug**: if a slug derived from the title already exists in `posts.json`, append `-2` (or the year if that's meaningful).
 - **No excerpt provided**: draft one from the first paragraph of the article body, ≤ 25 words.
 - **Date in the past or future**: use whatever the user gives; don't second-guess it.
 - **Category not in the valid list**: pick the closest match and tell the user. Don't invent new category strings.
