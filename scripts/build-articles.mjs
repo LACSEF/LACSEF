@@ -30,7 +30,9 @@ const STATIC_PAGES = [
     changefreq: "monthly",
     priority: "0.7",
   },
+  { path: "/students/pre-approval.html", changefreq: "monthly", priority: "0.8" },
   { path: "/students/pre-approval-faq.html", changefreq: "monthly", priority: "0.7" },
+  { path: "/students/rules-regulations.html", changefreq: "monthly", priority: "0.8" },
   {
     path: "/students/supervisor-qualifications.html",
     changefreq: "monthly",
@@ -43,7 +45,6 @@ const STATIC_PAGES = [
   },
   { path: "/judges.html", changefreq: "monthly", priority: "0.8" },
   { path: "/volunteer.html", changefreq: "monthly", priority: "0.8" },
-  { path: "/results.html", changefreq: "yearly", priority: "0.7" },
   { path: "/contact.html", changefreq: "monthly", priority: "0.7" },
   { path: "/advisory-committee.html", changefreq: "yearly", priority: "0.5" },
   { path: "/sponsors.html", changefreq: "monthly", priority: "0.7" },
