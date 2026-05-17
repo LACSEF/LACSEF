@@ -1,8 +1,6 @@
-# 2026 Fair Results
-
 The results from the 76th Annual LA County Science & Engineering Fair are now available. Congratulations to all students who competed this year.
 
-## 2026 Highlights
+## Highlights
 
 <video controls preload="none" style="width:100%;border-radius:8px;margin-bottom:1rem;" aria-label="2026 LACSEF Highlights Reel">
   <source src="https://www.lascifair.org/wp-content/uploads/2026/03/2026-Highlights-Reel.mp4" type="video/mp4" />

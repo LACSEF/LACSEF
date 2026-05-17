@@ -1,5 +1,3 @@
-# LACSEF Launches a new website!
-
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel ligula eget nulla mollis egestas eget sit amet purus. Quisque sed urna eget risus porttitor pellentesque. Morbi non arcu augue. Vivamus aliquet sed sem et consectetur. Vivamus eget libero in nibh ultrices ultrices. Morbi dignissim tortor nec augue lobortis rutrum. Mauris ut diam sagittis diam interdum vestibulum eu et odio. Suspendisse nunc ipsum, varius id enim vitae, laoreet ultricies augue. Proin eget placerat nisl, vulputate consectetur nisi. Nullam facilisis vel odio sed tincidunt.
 
 Ut congue tempus enim sed finibus. Maecenas mattis, lacus id venenatis ultricies, lorem dui cursus diam, ut interdum nulla ipsum vitae nisl. Sed id malesuada nulla. Mauris nec odio nisl. Quisque mattis, lorem ac semper auctor, dolor magna tincidunt risus, sodales pulvinar velit turpis ornare ligula. Ut a nisi at nulla vulputate consectetur. Integer finibus vel tortor vel porta.
