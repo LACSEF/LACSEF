@@ -218,7 +218,7 @@ for (const article of articles) {
     return `<img src="${escapeHtml(href)}" alt="${escapeHtml(text)}"${titleAttr}>`;
   };
 
-  const md = readFileSync(join(ROOT, "news/posts", `${article.file}.md`), "utf8");
+  const md = readFileSync(join(ROOT, "news/posts", article.file), "utf8");
   const bodyHtml = marked.parse(md, { renderer });
   const html = articlePage(article, bodyHtml);
   const outPath = join(ROOT, "news/posts", `${article.id}.html`);

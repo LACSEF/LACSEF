@@ -1,7 +1,7 @@
 [
   {
     "id": "registration-2024",
-    "file": "2024-02/registration-2024/registration-2024",
+    "file": "2024-02/registration-2024/registration-2024.md",
     "title": "Registration Open for 2024 LA County Science Fair",
     "category": "Announcement",
     "date": "2024-02-28",
@@ -11,7 +11,7 @@
   },
   {
     "id": "new-rubric-guidelines",
-    "file": "2024-02/new-rubric-guidelines/new-rubric-guidelines",
+    "file": "2024-02/new-rubric-guidelines/new-rubric-guidelines.md",
     "title": "New Rubric Guidelines Released",
     "category": "For Judges",
     "date": "2024-02-25",
@@ -19,7 +19,7 @@
   },
   {
     "id": "sarah-chen-spotlight",
-    "file": "2024-02/sarah-chen-spotlight/sarah-chen-spotlight",
+    "file": "2024-02/sarah-chen-spotlight/sarah-chen-spotlight.md",
     "title": "Alumni Spotlight: Sarah Chen's Water Filtration Journey",
     "category": "Success Stories",
     "date": "2024-02-20",
@@ -27,7 +27,7 @@
   },
   {
     "id": "webinar-student-research",
-    "file": "2024-02/webinar-student-research/webinar-student-research",
+    "file": "2024-02/webinar-student-research/webinar-student-research.md",
     "title": "Webinar: Supporting Student Research",
     "category": "For Teachers",
     "date": "2024-02-18",
@@ -35,7 +35,7 @@
   },
   {
     "id": "abstract-format-guide",
-    "file": "2024-02/abstract-format-guide/abstract-format-guide",
+    "file": "2024-02/abstract-format-guide/abstract-format-guide.md",
     "title": "How to Format Your Abstract",
     "category": "For Students",
     "date": "2024-02-15",
@@ -43,7 +43,7 @@
   },
   {
     "id": "judges-orientation-2024",
-    "file": "2024-02/judges-orientation-2024/judges-orientation-2024",
+    "file": "2024-02/judges-orientation-2024/judges-orientation-2024.md",
     "title": "Judge Orientation Session Scheduled for February 28",
     "category": "For Judges",
     "date": "2024-02-10",
@@ -51,7 +51,7 @@
   },
   {
     "id": "project-safety-checklist",
-    "file": "2024-02/project-safety-checklist/project-safety-checklist",
+    "file": "2024-02/project-safety-checklist/project-safety-checklist.md",
     "title": "Project Safety Checklist for Lab Research",
     "category": "For Students",
     "date": "2024-02-05",
@@ -59,7 +59,7 @@
   },
   {
     "id": "volunteer-call-2024",
-    "file": "2024-01/volunteer-call-2024/volunteer-call-2024",
+    "file": "2024-01/volunteer-call-2024/volunteer-call-2024.md",
     "title": "Call for Fair Volunteers — Help Make the Magic Happen",
     "category": "Announcement",
     "date": "2024-01-30",
@@ -67,7 +67,7 @@
   },
   {
     "id": "display-board-tips",
-    "file": "2024-01/display-board-tips/display-board-tips",
+    "file": "2024-01/display-board-tips/display-board-tips.md",
     "title": "Display Board Design Tips from Past Winners",
     "category": "For Students",
     "date": "2024-01-25",
@@ -75,7 +75,7 @@
   },
   {
     "id": "junior-division-preview",
-    "file": "2024-01/junior-division-preview/junior-division-preview",
+    "file": "2024-01/junior-division-preview/junior-division-preview.md",
     "title": "Junior Division: What 6th–8th Graders Can Expect",
     "category": "Announcement",
     "date": "2024-01-20",
@@ -83,7 +83,7 @@
   },
   {
     "id": "interview-skills-workshop",
-    "file": "2024-01/interview-skills-workshop/interview-skills-workshop",
+    "file": "2024-01/interview-skills-workshop/interview-skills-workshop.md",
     "title": "Interview Skills Workshop — January Recap",
     "category": "For Students",
     "date": "2024-01-15",
@@ -91,7 +91,7 @@
   },
   {
     "id": "mentor-program-launch",
-    "file": "2024-01/mentor-program-launch/mentor-program-launch",
+    "file": "2024-01/mentor-program-launch/mentor-program-launch.md",
     "title": "Mentor Match Program Now Open for 2024",
     "category": "Announcement",
     "date": "2024-01-10",
@@ -99,7 +99,7 @@
   },
   {
     "id": "stem-scholarship-spotlight",
-    "file": "2024-01/stem-scholarship-spotlight/stem-scholarship-spotlight",
+    "file": "2024-01/stem-scholarship-spotlight/stem-scholarship-spotlight.md",
     "title": "LACSEF Alumni Earns Full Caltech Scholarship",
     "category": "Success Stories",
     "date": "2024-01-05",
@@ -107,7 +107,7 @@
   },
   {
     "id": "category-descriptions-2024",
-    "file": "2023-12/category-descriptions-2024/category-descriptions-2024",
+    "file": "2023-12/category-descriptions-2024/category-descriptions-2024.md",
     "title": "2024 Project Category Descriptions Released",
     "category": "For Students",
     "date": "2023-12-28",
@@ -115,7 +115,7 @@
   },
   {
     "id": "teacher-stipend-program",
-    "file": "2023-12/teacher-stipend-program/teacher-stipend-program",
+    "file": "2023-12/teacher-stipend-program/teacher-stipend-program.md",
     "title": "Teacher Stipend Program Returns for 2024",
     "category": "For Teachers",
     "date": "2023-12-20",
@@ -123,7 +123,7 @@
   },
   {
     "id": "virtual-fair-recap-2023",
-    "file": "2023-12/virtual-fair-recap-2023/virtual-fair-recap-2023",
+    "file": "2023-12/virtual-fair-recap-2023/virtual-fair-recap-2023.md",
     "title": "2023 Fair Recap: Highlights from 400 Projects",
     "category": "Announcement",
     "date": "2023-12-15",
@@ -131,7 +131,7 @@
   },
   {
     "id": "data-science-category",
-    "file": "2023-12/data-science-category/data-science-category",
+    "file": "2023-12/data-science-category/data-science-category.md",
     "title": "New Data Science & AI Category Added for 2024",
     "category": "Announcement",
     "date": "2023-12-10",
@@ -139,7 +139,7 @@
   },
   {
     "id": "parent-faq",
-    "file": "2023-12/parent-faq/parent-faq",
+    "file": "2023-12/parent-faq/parent-faq.md",
     "title": "Parent & Guardian FAQ",
     "category": "For Students",
     "date": "2023-12-05",
@@ -147,7 +147,7 @@
   },
   {
     "id": "isef-qualifiers-2023",
-    "file": "2023-11/isef-qualifiers-2023/isef-qualifiers-2023",
+    "file": "2023-11/isef-qualifiers-2023/isef-qualifiers-2023.md",
     "title": "Congratulations to Our 2023 ISEF Qualifiers",
     "category": "Success Stories",
     "date": "2023-11-28",
@@ -155,7 +155,7 @@
   },
   {
     "id": "lab-notebook-guide",
-    "file": "2023-11/lab-notebook-guide/lab-notebook-guide",
+    "file": "2023-11/lab-notebook-guide/lab-notebook-guide.md",
     "title": "Keeping a Research Lab Notebook — A Student Guide",
     "category": "For Students",
     "date": "2023-11-20",
@@ -163,7 +163,7 @@
   },
   {
     "id": "regional-partner-schools",
-    "file": "2023-11/regional-partner-schools/regional-partner-schools",
+    "file": "2023-11/regional-partner-schools/regional-partner-schools.md",
     "title": "10 New Regional Partner Schools Announced",
     "category": "Announcement",
     "date": "2023-11-15",
@@ -171,7 +171,7 @@
   },
   {
     "id": "judge-recruitment-2024",
-    "file": "2023-11/judge-recruitment-2024/judge-recruitment-2024",
+    "file": "2023-11/judge-recruitment-2024/judge-recruitment-2024.md",
     "title": "Recruiting STEM Professionals to Judge",
     "category": "For Judges",
     "date": "2023-11-10",
@@ -179,7 +179,7 @@
   },
   {
     "id": "research-ethics-primer",
-    "file": "2023-11/research-ethics-primer/research-ethics-primer",
+    "file": "2023-11/research-ethics-primer/research-ethics-primer.md",
     "title": "Research Ethics: A Primer for Young Scientists",
     "category": "For Students",
     "date": "2023-11-05",
@@ -187,7 +187,7 @@
   },
   {
     "id": "grand-award-history",
-    "file": "2023-10/grand-award-history/grand-award-history",
+    "file": "2023-10/grand-award-history/grand-award-history.md",
     "title": "50 Years of Grand Award Winners: A Look Back",
     "category": "Success Stories",
     "date": "2023-10-25",
@@ -195,7 +195,7 @@
   },
   {
     "id": "outreach-grant-2023",
-    "file": "2023-10/outreach-grant-2023/outreach-grant-2023",
+    "file": "2023-10/outreach-grant-2023/outreach-grant-2023.md",
     "title": "LACSEF Receives $250,000 Outreach Grant",
     "category": "Announcement",
     "date": "2023-10-15",
@@ -203,7 +203,7 @@
   },
   {
     "id": "new-website-launched",
-    "file": "2026-05/new-website-launched/new-website-launched",
+    "file": "2026-05/new-website-launched/new-website-launched.md",
     "title": "LACSEF Launches new website",
     "category": "Announcement",
     "date": "2026-05-17",
